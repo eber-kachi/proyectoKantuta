@@ -3,12 +3,11 @@ CREATE DATABASE kantuta;
 USE kantuta;
 
 
-CREATE TABLE `Empresa`
+CREATE TABLE Empresa
 (
-  `idEmpresa` int auto_increment ,
-  `nombre` varchar(50),
-  `nit` varchar(50),
-  PRIMARY KEY(`idEmpresa`)
+  idEmpresa INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+  nombre varchar(50),
+  nit varchar(50),
 )ENGINE=INNODB;
 CREATE TABLE `Cargo`
 (

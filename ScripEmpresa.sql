@@ -1,1 +1,0 @@
-inser int empresa 
