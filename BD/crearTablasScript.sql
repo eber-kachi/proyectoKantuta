@@ -56,6 +56,7 @@ CREATE TABLE Empleado(
    FOREIGN KEY (idCargo)REFERENCES Cargo(idCargo)ON UPDATE CASCADE ON DELETE CASCADE,
    FOREIGN KEY (idEstadoCivil)REFERENCES EstadoCivil(idEstadoCivil)ON UPDATE CASCADE ON DELETE CASCADE
 )ENGINE=INNODB;
+
 CREATE TABLE `Asistencia`
 (
   `idAsistencia` int auto_increment,
