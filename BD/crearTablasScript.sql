@@ -44,7 +44,7 @@ CREATE TABLE Empleado(
   segundoNombre varchar(20),
   apellidoPaterno varchar(20) NOT NULL,
   apellidoMaterno varchar(20),
-  fechaNacimiendo varchar(20) NOT NULL,
+  fechaNacimiendo date NOT NULL,
   codeRFID varchar(20) NOT NULL,
   genero ENUM('M','F') NOT NULL,
   fotografia varchar(70),
