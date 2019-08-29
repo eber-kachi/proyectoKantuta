@@ -17,6 +17,12 @@ CREATE TABLE Cargo
   flexible boolean NOT NULL
 )ENGINE=INNODB;
 
+CREATE TABLE EstadoCivil
+(
+  idEstadoCivil INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nombre varchar(20) not null,
+)ENGINE=INNODB;
+
 CREATE TABLE Horario
 (
   idHorario INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -30,12 +36,7 @@ CREATE TABLE Horario
 )ENGINE=INNODB;
 
 
-CREATE TABLE `EstadoCivil`
-(
-  `idEstadoCivil` int auto_increment,
-  `nombre` varchar(20),
-  PRIMARY KEY(`idEstadoCivil`)
-)ENGINE=INNODB;
+
 
 
 
