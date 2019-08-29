@@ -1,7 +1,8 @@
 use kantuta;
-
+-- se inserto datos de cargo 
 INSERT INTO cargo(nombre,flexible)
 VALUES
+    ('Administrador', 0),
     ('Secretaria', 0),
     ('Obrero', 0),
     ('Supervisor', 0),
@@ -9,8 +10,12 @@ VALUES
     ('Seguridad', 0),
     ('Almacenero', 0),
     ('Chofer', 0);
-
-
+-- agregando estado civil
+insert into estadocivil( nombre)
+values ('Casado'),
+       ('Soltero'),
+       ('Viudo');
+-- se esta rellenando  la tabla empleado con 40 datos 
 
 
 
