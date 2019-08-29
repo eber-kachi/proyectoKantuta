@@ -16,10 +16,11 @@ CREATE TABLE Cargo
   nombre varchar(30),
   flexible boolean 
 )ENGINE=INNODB;
-CREATE TABLE `Horario`
+
+CREATE TABLE Horario
 (
-  `idHorario` int auto_increment,
-  `idCargo` int,
+  idHorario INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  idCargo int UNSIGNED,
   `horarioIngreso` DATETIME ,
   `HorarioSalida` DATETIME ,
   `estadoTurno` DATETIME ,
