@@ -68,17 +68,16 @@ CREATE TABLE Gestion
   FOREIGN KEY (idEmpleado)REFERENCES Empleado(idEmpleado)ON UPDATE CASCADE ON DELETE CASCADE
 )ENGINE=INNODB;
 
-CREATE TABLE `Asistencia`
+CREATE TABLE Asistencia
 (
-  `idAsistencia` int auto_increment,
-  `idEmpleado` int ,
-  `estado` varchar(20),
-  `horaFechaEntrada` DATETIME,
-  `horaFechaSalida` DATETIME,
-  `TotalHoras` int ,
-  PRIMARY KEY(`idAsistencia`),
-   FOREIGN KEY (idEmpleado)REFERENCES Empleado(idEmpleado)ON DELETE CASCADE
+  idAsistencia INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  idEmpleado INT UNSIGNED NOT NULL,
+  horaFechaEntrada DATETIME NOT NULL,
+  horaFechaSalida DATETIME NOT NULL,
+  TotalHoras Double NOT NULL,
+  FOREIGN KEY (idEmpleado)REFERENCES Empleado(idEmpleado)ON UPDATE CASCADE ON DELETE CASCADE
 )ENGINE=INNODB;
+
 CREATE TABLE Vacacion
 (
   `idVacacion` int auto_increment,
