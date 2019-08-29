@@ -1,6 +1,6 @@
 INSERT INTO Empleado(idEmpleado,idRol,idEstadoCivil,CI,primerNombre,segundoNombre,apellidoPaterno,apellidoMaterno,fechaNacimiento,codeRFID,
 genero,fotografia,numeroCelular,numeroFijo,usuario,contraseña,activo) 
-VALUES(null,1,1,'1234','Jose','Amilcar','CAyllante','Capia','2000-08-01','702387872','M',null,'78823923','2663832','jcayllante1234','1234',true);
+VALUES(null,1,1,'1234','Jose','Amilcar','Cayllante','Capia','2000-08-01','702387872','M',null,'78823923','2663832','jcayllante1234','1234',true);
 
 INSERT INTO Empleado(idEmpleado,idRol,idEstadoCivil,CI,primerNombre,segundoNombre,apellidoPaterno,apellidoMaterno,fechaNacimiento,codeRFID,
 genero,fotografia,numeroCelular,numeroFijo,usuario,contraseña,activo) 
