@@ -57,6 +57,17 @@ CREATE TABLE Empleado(
    FOREIGN KEY (idEstadoCivil)REFERENCES EstadoCivil(idEstadoCivil)ON UPDATE CASCADE ON DELETE CASCADE
 )ENGINE=INNODB;
 
+
+CREATE TABLE Gestion
+(
+  idGestion INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  idEmpresa int UNSIGNED NOT NULL ,
+  idEmpleado int UNSIGNED NOT NULL ,
+  Fecha DATETIME NOT NULL,
+  FOREIGN KEY (idEmpresa)REFERENCES Empresa(idEmpresa)ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY (idEmpleado)REFERENCES Empleado(idEmpleado)ON UPDATE CASCADE ON DELETE CASCADE
+)ENGINE=INNODB;
+
 CREATE TABLE `Asistencia`
 (
   `idAsistencia` int auto_increment,
@@ -87,17 +98,6 @@ CREATE TABLE `Feriado`
   PRIMARY KEY(`idFeriado`)
 )ENGINE=INNODB;
 
-CREATE TABLE `Gestion`
-(
-  `idGestion` int auto_increment,
-  `idEmpresa` int ,
-  `idEmpleado`int ,
-  `Fecha` DATETIME,
-  KEY `Pk`(`idGestion`),
-  FOREIGN KEY (idEmpresa)REFERENCES Empresa(idEmpresa)ON DELETE CASCADE,
-  FOREIGN KEY (idEmpleado)REFERENCES Empleado(idEmpleado)ON DELETE CASCADE
-  
-)ENGINE=INNODB;
 
 CREATE TABLE `ReferenciaEmpleado`
 (
