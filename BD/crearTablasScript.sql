@@ -5,17 +5,16 @@ USE kantuta;
 
 CREATE TABLE Empresa
 (
-  idEmpresa INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-  nombre varchar(50),
-  nit varchar(50),
+  idEmpresa INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nombre varchar(50) NOT NULL,
+  nit varchar(50) NOT NULL
 )ENGINE=INNODB;
-CREATE TABLE `Cargo`
+
+CREATE TABLE Cargo
 (
-  `idCargo`int auto_increment,
-  `nombre` varchar(30),
-  `flexible` boolean,
-  PRIMARY KEY(`idCargo`)
-  
+  idCargo INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nombre varchar(30),
+  flexible boolean 
 )ENGINE=INNODB;
 CREATE TABLE `Horario`
 (
