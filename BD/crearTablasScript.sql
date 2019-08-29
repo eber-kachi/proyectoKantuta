@@ -35,34 +35,26 @@ CREATE TABLE Horario
   FOREIGN KEY(idCargo) REFERENCES Cargo(idCargo) ON UPDATE CASCADE ON DELETE CASCADE
 )ENGINE=INNODB;
 
-
-
-
-
-
-
-
-CREATE TABLE `Empleado`(
-  `idEmpleado` int auto_increment,
-  `idCargo` int ,
-  `idEstadoCivil` int ,
-  `Ci` varchar(70),
-  `primerNombre` varchar(70),
-  `segundoNombre` varchar(70),
-  `apellidoPaterno` varchar(70),
-  `apellidoMaterno` varchar(70),
-  `fechaNacimiendo` varchar(70),
-  `codeRFID` varchar(70),
-  `genero` ENUM('M','F'),
-  `fotografia` varchar(70),
-  `numeroCelular` varchar(20),
-  `numeroFijo` varchar(20),
-  `usuario` varchar(70),
-  `contrasenia` varchar(70),
-  `activo` boolean,
-   PRIMARY KEY(`idEmpleado`),
-   FOREIGN KEY (idCargo)REFERENCES Cargo(idCargo)ON DELETE CASCADE,
-   FOREIGN KEY (idEstadoCivil)REFERENCES EstadoCivil(idEstadoCivil)ON DELETE CASCADE
+CREATE TABLE Empleado(
+  idEmpleado INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  idCargo int UNSIGNED NOT NULL,
+  idEstadoCivil int UNSIGNED NOT NULL ,
+  CI varchar(40) NOT NULL,
+  primerNombre varchar(20) NOT NULL,
+  segundoNombre varchar(20),
+  apellidoPaterno varchar(20) NOT NULL,
+  apellidoMaterno varchar(20),
+  fechaNacimiendo varchar(20) NOT NULL,
+  codeRFID varchar(20) NOT NULL,
+  genero ENUM('M','F') NOT NULL,
+  fotografia varchar(70),
+  numeroCelular varchar(20),
+  numeroFijo varchar(20),
+  usuario varchar(40) NOT NULL,
+  contraseña varchar(70) NOT NULL,
+  activo boolean NOT NULL,
+   FOREIGN KEY (idCargo)REFERENCES Cargo(idCargo)ON UPDATE CASCADE ON DELETE CASCADE,
+   FOREIGN KEY (idEstadoCivil)REFERENCES EstadoCivil(idEstadoCivil)ON UPDATE CASCADE ON DELETE CASCADE
 )ENGINE=INNODB;
 CREATE TABLE `Asistencia`
 (
