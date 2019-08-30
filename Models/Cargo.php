@@ -2,9 +2,9 @@
 
 class Cargo
 {
-    private idCargo; 
-    private nombre;
-    private flexible;
+    private $idCargo; 
+    private $nombre;
+    private $flexible;
 
     function __construct()
     { }
