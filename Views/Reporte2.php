@@ -8,7 +8,7 @@
 </head>
 <body>
 <main>
-              <form action="InscripcionEstadistico2.php" method="post" name="ReporteEstadistico2">
+              <form action="ReporteA2.php" method="post" name="ReporteEstadistico">
                 <h1>Mostrar reporte estadístico de los últimos cinco años cantidad de inscritos, hasta un año antes del actual.</h1>
                   <label for="username">Año Inicial :</label>
                   <select name="gestion1">

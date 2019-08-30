@@ -5,6 +5,8 @@ class Gestion
     private $idEmpresa;
     private $idEmpleado;
     private $fecha;
+    private $cantidadH;
+    private $cantidadM;
 
 
 
@@ -29,7 +31,8 @@ class Gestion
         $this->fecha = $fecha;
     }
 
-
+    public function setCantidadH($cantidadH){$this->cantidadH = $cantidadH;}
+    public function setCantidadM($cantidadM){$this->cantidadM = $cantidadM;}
     //get
     public function getidGestion()
     {
@@ -47,4 +50,7 @@ class Gestion
     {
         return $this->fecha;
     }
+
+    public function getCantidadH(){return $this->cantidadH;}
+    public function getCantidadM(){return $this->cantidadM;}
 }//end class

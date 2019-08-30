@@ -1,0 +1,44 @@
+.theme-mi-slider .nivoSlider{
+    position: relative;
+}
+.theme-mi-slider .nivoSlider a{
+    border-image-repeat: 0;
+    display: block;
+}
+.nivo-controlNav{
+    display: flex;
+    justify-content:center;
+}
+.theme-mi-slider .nivo-control{
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #545454;
+    margin: 3px;
+    text-indent: -9999px;
+}
+.theme-mi-slider .nivo-control:hover{
+    background: #1b1b1b;
+}
+.theme-mi-slider .active{
+    background: #1b1b1b;
+}
+/* Nivo direccion */
+.nivo-directionNav a{
+    display:block;
+    width: 35px;
+    height: 35px;
+}
+.nivo-directionNav .nivo-prevNav{
+    background-image: url(../images/circle-left.png);
+    background-size: cover;
+    text-indent: -9999px;
+    left: 12px;
+}
+.nivo-directionNav .nivo-nextNav{
+    background-image: url(../images/circle-right.png);
+    background-size: cover;
+    text-indent: -9999px;
+    right: 12px;
+}

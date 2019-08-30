@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.header1
+{
+    position: fixed;
+    top: 10px;
+    left: 86%;
+}
+.mainmenu{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+     height: 150px; 
+     background: rgba(98,196,209,1);
+background: -moz-linear-gradient(top, rgba(98,196,209,1) 0%, rgba(98,196,209,1) 32%, rgba(183,222,237,1) 74%, rgba(183,222,237,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(98,196,209,1)), color-stop(32%, rgba(98,196,209,1)), color-stop(74%, rgba(183,222,237,1)), color-stop(100%, rgba(183,222,237,1)));
+background: -webkit-linear-gradient(top, rgba(98,196,209,1) 0%, rgba(98,196,209,1) 32%, rgba(183,222,237,1) 74%, rgba(183,222,237,1) 100%);
+background: -o-linear-gradient(top, rgba(98,196,209,1) 0%, rgba(98,196,209,1) 32%, rgba(183,222,237,1) 74%, rgba(183,222,237,1) 100%);
+background: -ms-linear-gradient(top, rgba(98,196,209,1) 0%, rgba(98,196,209,1) 32%, rgba(183,222,237,1) 74%, rgba(183,222,237,1) 100%);
+background: linear-gradient(to bottom, rgba(98,196,209,1) 0%, rgba(98,196,209,1) 32%, rgba(183,222,237,1) 74%, rgba(183,222,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62c4d1', endColorstr='#b7deed', GradientType=0 );
+}
+#nav{
+    position: fixed;
+    z-index: 1000;
+    top: 60px;
+    left: 26%;
+}
+
+#nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0 20px;
+    float: left;
+    text-align: center;
+}
+#nav ul li {
+    list-style: none;
+}
+#nav ul li a{
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: -50px;
+    font-size: 120%;
+    margin: auto;
+    color: #fff;
+    background: black;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+}
+
+.xavinet{
+    position: fixed;
+    height:150px;
+    z-index: 999; 
+}
+/* .scenareality{
+    position: fixed;
+    width: 150px;
+    height: 150px;
+} */
+/* .imagelogoxavinet{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 4px solid black;
+} */
+/*menu de navegacion*/
+
+#nav > ul > li:hover > a{
+    background: #fff;
+    color: #000;
+    transition: background-color 0.90s;
+    border-radius: 20px;
+
+}
+.idioma{
+    position: fixed;
+    top: 6%;
+    left: 70%;
+}
+.idioma .a{
+    top: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    background: black;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all ease-in-out 0.5s;
+     border: 2px solid #ffffff;
+}
+.idioma .a:hover{
+    border-radius: 20px;
+    border-color:#f2f2f2;
+    background: #ffffff;
+    color: #000;
+}
+/*fin menu de navegacion*/
+
+    #detallespadre{
+        position: relative;
+       top: 900px;
+        align-content: center;
+        margin: auto;
+        width: 80%;
+        height: 50%;
+    }
+    .tddetalles{
+       
+        width: 33.33%;
+    }
+    .detalleslogo{
+        width: 200px;
+        height: 200px;
+    }
+    /*fin detalles*/
+/*cuerpo de la pagina*/
+
+
+/*mapas y redes sociales page contactanos*/
+.imgcontactos{
+    position: relative;
+    top: 0px;
+    height: 100px;
+    width: 100px;
+}
+.tdcontactos{
+    position: relative;
+    top: 200px;
+    padding-left: 60px;
+}
+/*fin mapas y redes sociales page contactanos*/
+/*Pie de pagina*/
+footer{  
+    position: relative;  
+    top: 900px;
+    background-color: black;
+}
+.titulopie{
+    
+    color: #e5e5e5;
+    font-size: 23px;  
+}
+.infopie{
+    color: #888;
+    font-size: 18px;
+}
+footer > div > a{
+    text-decoration: none;
+    color: #888;
+}
+#pie{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*Fin Pie de pagina*/
+/* menu responsive */
+.menu_bar{
+    position: fixed;
+    z-index: 1000;
+    top: 5%;
+    
+}
+.img-menu_png{
+    width: 10%;
+    height: 10%;
+}
+.menu_bar label{
+    display: none;
+} 
+.menu_bar label:hover{
+   cursor: pointer;
+}
+.imgindexfooter:hover{
+    width: 60px;
+    height: 60px;
+}
+/* fin menu responsive */
+@media (max-width:1600px){
+   #nav{
+       position: fixed;
+       top: 7%;
+       left: 25%;
+ }
+ .header1 .loginis .iniciarsesion{
+     position: fixed;
+     left: 45%;
+ }
+ .header1 .loginis .registrarse{
+    position: fixed;
+    left: 55%;
+}
+.idioma{
+    position: fixed;
+    top: 1.5%;
+    left: 68%;
+}
+.seccion{
+    position: relative;
+    top: 20px;
+}
+}
+@media (max-width: 850px){
+   .header1{
+       position: fixed;
+       top: 8%;
+       left: 60%;
+   }
+   .header1 > .loginis > .iniciarsesion{
+       margin: 0;
+       padding: 0;
+       position: fixed;
+       top: 15%;
+       left: 60%;
+   }
+  body .header1 .loginis .registrarse{
+    margin: 0;
+    padding: 0;
+     position: fixed;
+     top: 18%;
+     left: 60%;
+    }
+    .menu_bar label{
+        display: block;
+       
+    }
+    .header1 .menu_bar{
+        position: fixed;
+        top: 8%;
+    }
+    #nav{
+        margin: 0;
+        position: fixed;
+        display: none;
+        top: 15%;
+    }
+    #nav > ul{
+        flex-direction: column;
+    } 
+    
+    #nav > ul > li{
+        padding: 1px;
+    }
+    #nav > ul > li > a{
+        padding: 1px;
+        font-size: 100%;
+    }
+
+    /*fin menu de navegacion*/
+
+    /*cuerpo de pagina*/
+    .conceptos .quienes_somos{
+        position: relative;
+        top: 0;
+        padding: 0;
+        margin: 0;
+    }
+     
+    /* .tdconceptos{
+        position: relative;
+        top: 200px;
+        display: block;
+    }
+    .tdconceptos > img{
+        width: 100%;
+        display:block;
+    } */
+
+    /*mapas y redes sociales*/
+    .tdcontactos{
+        display: block;
+        padding-left: 0;
+        text-align: center;
+    }
+    iframe{
+        width: 100%;
+    }
+    /*fin mapas y redes sociales*/
+    /*cuerpo de pagina*/
+    #detallespadre{
+        height: 900px;
+    }
+    .tddetalles > td{
+        display: block;
+    }
+    /*Pie de pagina*/
+    .titulopie{
+        font-size: 19px;  
+    }
+    .infopie{
+        font-size: 17px;
+    }
+    /*Fin Pie de pagina*/
+
+}

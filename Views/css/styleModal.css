@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    background:green; 
+}
+header{
+background: rgba(26,153,12,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(26,153,12,1)), color-stop(4%, rgba(24,245,12,1)), color-stop(53%, rgba(147,240,93,1)), color-stop(100%, rgba(13,107,2,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+background: radial-gradient(ellipse at center, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a990c', endColorstr='#0d6b02', GradientType=1 );
+}
+main{
+    padding: 40px;
+}
+.content-all{
+    width: 100%; 
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    }
+a{
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px;
+    color: black;
+    border: 1px solid #fff;
+    border-radius: #fff;
+    background: yellow;
+}
+a:hover{background: #000; color: #fff; border: 1px solid #000; }
+.content-btn{
+    width: 293px;
+    margin: auto;
+}
+.btnRegistrar{
+    border: 1px solid #fff;
+    font-size: 20px;
+     padding: 10px;
+     background: green;
+    }
+.tablaImagen{
+    font-weight: bold;
+    font-size: 15px;
+    border: 5px solid #34495e;
+    margin: auto;
+}
+.tablaImagen a{
+ font-size: 15px;
+}
+.imgproyectomostrar{
+    width: 120px;
+    height: 120px;
+}
+.volverAdmin{
+    width: 150px;
+    padding: 10px;
+    background: green;
+}

@@ -1,0 +1,64 @@
+.titulocontactanos{
+    position: relative;
+    top: 800px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mapa{
+    position: relative;
+    top: 70px;
+    margin :auto;
+    border: 2px solid black;
+    width: 504px;
+}
+.titulopiec{
+    color: aliceblue;
+}
+.infopiec{
+    color: aliceblue;
+}
+.footerc{
+    position: relative;
+    top: 10px;
+}
+.nuestraubic{
+    background: aliceblue;
+    border: 2px solid black;
+    height: 1000px;
+    position: relative;
+}
+.contactos{
+    position: relative;
+    top: 100px;
+    margin: auto
+}
+.regComForm{
+ border: 2px solid black;
+ position: relative;
+ margin: auto; 
+ top: 80px; 
+ width: 400px;
+}
+@media (max-width:1600px){
+.titulocontactanos{
+    position: relative;
+    top:130px;
+    font-size: 30px;
+}
+.mapa{
+    position: relative;
+    top:120px;
+}
+.nuestraubic{
+    position: relative;
+    height: 1100px;
+}
+.regComForm{
+    position: relative;
+    top: 125px;
+}
+.contactos{
+    position: relative;
+    top: 150px;
+}
+}
