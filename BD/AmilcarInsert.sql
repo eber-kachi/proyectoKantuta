@@ -231,3 +231,10 @@ VALUES(null,'834','Sara','','Martinez','Garza','2001-10-17','22323323','M',null,
 
 --INSERT HORARIO
 
+
+INSERT INTO Horario(idHorario,idCargo,horarioIngreso,HorarioSalida,estadoTurno,ingresoTurno2,salidaTurno2) 
+VALUES(null,2,'08:00:00','12:00:00',1,'14:00:00','18:00:00');
+INSERT INTO Horario(idHorario,idCargo,horarioIngreso,HorarioSalida,estadoTurno,ingresoTurno2,salidaTurno2) 
+VALUES(null,3,'06:00:00','14:00:00',0,null,null);
+INSERT INTO Horario(idHorario,idCargo,horarioIngreso,HorarioSalida,estadoTurno,ingresoTurno2,salidaTurno2) 
+VALUES(null,4,'06:00:00','14:00:00',0,null,null);
