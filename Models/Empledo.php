@@ -17,7 +17,7 @@ class Empleado
     private $numeroCelular 
     private $numeroFijo 
     private $usuario 
-    private $contraseña 
+    private $contrasenia
     private $activo
 
             //set
@@ -150,9 +150,9 @@ class Empleado
             {
                 return $this->usuario;
             }
-            public function getcontraseña()
+            public function getcontrasenia()
             {
-                return $this->contraseña;
+                return $this->contrasenia;
             }
             public function getactivo()
             {
