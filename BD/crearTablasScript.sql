@@ -16,7 +16,6 @@ CREATE TABLE Cargo
   nombre varchar(30) NOT NULL,
   flexible boolean NOT NULL
 )ENGINE=INNODB;
-
 CREATE TABLE EstadoCivil
 (
   idEstadoCivil INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
