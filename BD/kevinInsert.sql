@@ -1,3 +1,4 @@
+--tabla de Empleado
 create table Empleado (
 	idEmpleado INT,
 	idCargo INT,
@@ -17,6 +18,9 @@ create table Empleado (
 	contraseña VARCHAR(50),
 	activo VARCHAR(50)
 );
+
+--Empleados creados en la tabla
+
 insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiendo, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values (1, 1, 'gawty0', 'vawty0', 'bawty0', 'Mounfield', 'Awty', 'tawty0', 'sawty0', 'F', 'fawty0', '6734345791', '5612556815', 'cawty0', '6AnoYSeki', false);
 insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiendo, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values (5, 2, 'kcorstorphine1', 'lcorstorphine1', 'rcorstorphine1', 'Musgrove', 'Corstorphine', 'jcorstorphine1', 'acorstorphine1', 'F', 'dcorstorphine1', '6905566821', '9686773362', 'acorstorphine1', 'DqROHTt1K9Fq', true);
 insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiendo, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values (2, 3, 'dkoop2', 'rkoop2', 'rkoop2', 'Tebboth', 'Koop', 'ckoop2', 'kkoop2', 'F', 'lkoop2', '4087304821', '7083445667', 'ckoop2', 'j9rck9rlrk8N', true);
@@ -66,4 +70,58 @@ insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, 
 insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiendo, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values ( 3,2 , 'vdemead1a', 'mdemead1a', 'kdemead1a', 'Jobbins', 'Demead', 'sdemead1a', 'jdemead1a', 'F', 'bdemead1a', '4558110685', '2952200872', 'ademead1a', '2OuMqU4LGQ3n', true);
 insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiendo, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values ( 6,3 , 'arunsey1b', 'vrunsey1b', 'mrunsey1b', 'Pierrepoint', 'Runsey', 'lrunsey1b', 'arunsey1b', 'F', 'drunsey1b', '1922196450', '7641193028', 'yrunsey1b', 'zl2M5V8', false);
 insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiendo, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values ( 7,1 , 'lguinness1c', 'jguinness1c', 'kguinness1c', 'Dare', 'Guinness', 'jguinness1c', 'wguinness1c', 'M', 'kguinness1c', '3018524242', '5844799064', 'hguinness1c', '9TQev6ih', true);
-insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiendo, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values ( 8,2 , 'deaklee1d', 'beaklee1d', 'reaklee1d', 'Reddihough', 'Eaklee', 'seaklee1d', 'leaklee1d', 'M', 'geaklee1d', '6688770975', '2239310348', 'seaklee1d', 'PrMDQS8vUr
+insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiendo, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values ( 8,2 , 'deaklee1d', 'beaklee1d', 'reaklee1d', 'Reddihough', 'Eaklee', 'seaklee1d', 'leaklee1d', 'M', 'geaklee1d', '6688770975', '2239310348', 'seaklee1d', 'PrMDQS8vUr');
+
+
+--mi insert de gestion
+
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,1,'2017-11-12 10:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,5,'2017-11-12 10:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,2,'2017-12-22 12:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,4,'2017-12-22 13:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,3,'2017-10-22 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,6,'2017-10-25 15:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2017-10-26 16:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2017-10-27 17:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,2,'2017-10-28 18:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,4,'2017-10-29 13:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,3,'2017-02-21 13:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,6,'2017-03-22 13:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2017-03-23 13:50:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2017-01-24 13:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,2,'2017-02-12 13:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,4,'2017-09-11 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,3,'2017-09-21 09:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,6,'2017-09-12 12:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2017-09-12 12:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2017-12-22 13:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,2,'2017-12-22 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,4,'2017-10-22 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,3,'2017-10-25 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,6,'2017-10-26 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2017-10-27 17:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2017-10-28 16:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,2,'2017-10-29 17:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,4,'2017-03-21 17:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,3,'2017-04-22 17:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,6,'2017-07-23 17:50:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2017-01-24 13:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2017-02-12 13:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,2,'2017-09-11 17:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,4,'2017-08-21 09:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,3,'2017-08-12 12:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,6,'2017-08-12 12:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2017-12-22 13:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2017-12-22 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,2,'2017-10-22 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,4,'2017-10-25 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,3,'2017-10-26 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,6,'2017-10-27 17:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2017-10-28 16:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2017-10-29 17:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,2,'2017-03-21 17:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,4,'2017-04-22 17:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,3,'2017-07-23 17:50:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,6,'2017-01-24 13:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2017-09-12 13:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2017-09-11 12:30:00');
