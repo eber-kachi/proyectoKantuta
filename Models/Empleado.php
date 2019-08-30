@@ -1,5 +1,7 @@
 <?php
 
+
+
 class Empleado
 {
     private $idEmpleado;
@@ -19,6 +21,9 @@ class Empleado
     private $usuario;
     private $contrasenia;
     private $activo;
+
+    function __construct()
+    { }
 
     //set
     public function setidEmpleado($idEmpleado)
