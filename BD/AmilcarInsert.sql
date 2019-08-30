@@ -1,3 +1,26 @@
+
+CREATE TABLE Empleado(
+  idEmpleado INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  idCargo int UNSIGNED NOT NULL,
+  idEstadoCivil int UNSIGNED NOT NULL ,
+  CI varchar(40) NOT NULL,
+  primerNombre varchar(20) NOT NULL,
+  segundoNombre varchar(20),
+  apellidoPaterno varchar(20) NOT NULL,
+  apellidoMaterno varchar(20),
+  fechaNacimiento date NOT NULL,
+  codeRFID varchar(20) NOT NULL,
+  genero ENUM('M','F') NOT NULL,
+  fotografia varchar(70),
+  numeroCelular varchar(20),
+  numeroFijo varchar(20),
+  usuario varchar(40) NOT NULL,
+  contrasenia varchar(70) NOT NULL,
+  activo boolean NOT NULL,
+   FOREIGN KEY (idCargo)REFERENCES Cargo(idCargo)ON UPDATE CASCADE ON DELETE CASCADE,
+   FOREIGN KEY (idEstadoCivil)REFERENCES EstadoCivil(idEstadoCivil)ON UPDATE CASCADE ON DELETE CASCADE
+)ENGINE=INNODB;
+
 INSERT INTO Empleado(idEmpleado,idCargo,idEstadoCivil,CI,primerNombre,segundoNombre,apellidoPaterno,apellidoMaterno,fechaNacimiento,codeRFID,
 genero,fotografia,numeroCelular,numeroFijo,usuario,contrasenia,activo) 
 VALUES(null,1,2,'1234','Jose','Amilcar','Cayllante','Capia','2000-08-01','702387872','M',null,'78823923','2663832','jcayllante1234','1234',true);
