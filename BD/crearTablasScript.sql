@@ -45,7 +45,7 @@ CREATE TABLE Empleado(
   apellidoPaterno varchar(20) NOT NULL,
   apellidoMaterno varchar(20),
   fechaNacimiento date NOT NULL,
-  codeRFID varchar(20) NOT NULL,
+  codeRFID varchar(20) UNIQUE   NOT NULL,
   genero ENUM('M','F') NOT NULL,
   fotografia varchar(70),
   numeroCelular varchar(20),
@@ -81,7 +81,7 @@ CREATE TABLE Asistencia
 CREATE TABLE Vacacion
 (
   idVacacion int auto_increment,
-  idEmpleado int ,
+  idEmpleado int UNSIGNED ,
   inicioVacacion date not null,
   finVacacion date not null,
   PRIMARY KEY(idVacacion),
@@ -91,8 +91,8 @@ CREATE TABLE Vacacion
 CREATE TABLE Feriado
 (
   idFeriado int auto_increment ,
-  fechaInicioDATETIME ,
-  fechaFinDATETIME ,
+  fechaInicio DATETIME ,
+  fechaFin DATETIME ,
   descripción text,
   PRIMARY KEY(idFeriado)
 )ENGINE=INNODB;
