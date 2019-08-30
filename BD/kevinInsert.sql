@@ -21,8 +21,20 @@ create table Empleado (
 
 --Empleados creados en la tabla
 
-insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values (1, 1, 'gawty0', 'vawty0', 'bawty0', 'Mounfield', 'Awty', 'tawty0', 'sawty0', 'F', 'fawty0', '6734345791', '5612556815', 'cawty0', '6AnoYSeki', false);
-insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values (5, 2, 'kcorstorphine1', 'lcorstorphine1', 'rcorstorphine1', 'Musgrove', 'Corstorphine', 'jcorstorphine1', 'acorstorphine1', 'F', 'dcorstorphine1', '6905566821', '9686773362', 'acorstorphine1', 'DqROHTt1K9Fq', true);
+
+--bro aslo la prueba con esto aver con estas 2 insert
+insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values (1, 1, 'gawty0', 'vawty0', 'bawty0', 'Mounfield', 'Awty', '1998-02-20', 'sawty0', 'F', 'fawty0', '6734345791', '5612556815', 'cawty0', '6AnoYSeki', false);
+insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values (5, 2, 'kcorstorphine1', 'lcorstorphine1', 'rcorstorphine1', 'Musgrove', 'Corstorphine', '1995-05-08', 'acorstorphine1', 'F', 'dcorstorphine1', '6905566821', '9686773362', 'acorstorphine1', 'DqROHTt1K9Fq', true);
+
+--solo esas bro
+
+
+
+
+
+
+
+
 insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values (2, 3, 'dkoop2', 'rkoop2', 'rkoop2', 'Tebboth', 'Koop', 'ckoop2', 'kkoop2', 'F', 'lkoop2', '4087304821', '7083445667', 'ckoop2', 'j9rck9rlrk8N', true);
 insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values (3, 1, 'byegorov3', 'dyegorov3', 'ayegorov3', 'Marler', 'Yegorov', 'ayegorov3', 'nyegorov3', 'M', 'byegorov3', '8407956232', '3375331209', 'syegorov3', 'qLsXzFa6h0h', true);
 insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contraseña, activo) values (4, 2, 'fseligson4', 'dseligson4', 'cseligson4', 'Buxcey', 'Seligson', 'fseligson4', 'hseligson4', 'F', 'dseligson4', '8504598017', '4729098110', 'rseligson4', 'sd5ClLypEy8q', true);
@@ -75,6 +87,9 @@ insert into Empleado ( idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, 
 
 
 
+
+
+INSERT INTO empleado (idCargo, idEstadoCivil, CI, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contrasenia, activo) VALUES (1, 2, '64464', 'luis', 'kevin', 'pinto', 'aguilar', '2019-09-30', 'fyffyf', 'M', 'drtdtrdr', 'dtdrtd', 'frdrd', 'r5rr6r6', 'frr5rytr', '1')
 
 
 
