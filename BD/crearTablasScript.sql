@@ -20,7 +20,7 @@ CREATE TABLE Cargo
 CREATE TABLE EstadoCivil
 (
   idEstadoCivil INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  nombre varchar(20) not null,
+  nombre varchar(20) not null
 )ENGINE=INNODB;
 
 CREATE TABLE Horario
@@ -44,7 +44,7 @@ CREATE TABLE Empleado(
   segundoNombre varchar(20),
   apellidoPaterno varchar(20) NOT NULL,
   apellidoMaterno varchar(20),
-  fechaNacimiendo varchar(20) NOT NULL,
+  fechaNacimiento date NOT NULL,
   codeRFID varchar(20) NOT NULL,
   genero ENUM('M','F') NOT NULL,
   fotografia varchar(70),
