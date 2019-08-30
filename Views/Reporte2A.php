@@ -5,10 +5,10 @@
     require('../Model/Gestion.php');
     require('../Model/BuscadorGestion.php');
 
-   $objetoBuscadorInscripcionMensualidad = new BuscadorInscripcionMensualidad();
-   $listaIM = array();
+   $objetoBuscadorGestion = new BuscadorGestion();
+   $listaGestion= array();
 
-    $listaIM = $objetoBuscadorInscripcionMensualidad->estadisticaInscripcionMensualidadGestion(2016,2018);
+    $listaGestion = $objetoBuscadorGestion->$listaGestion($_REQUEST['gestion1'],$_REQUEST['gestion2']);
 ?>
 
 <!DOCTYPE HTML>

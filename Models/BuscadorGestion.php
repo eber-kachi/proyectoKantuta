@@ -8,7 +8,7 @@
 			$this->conexion =  new Conexion();
         }
         
-		public function estadisticaInscripcionMensualidadGestion($gestion1,$gestion2)
+		public function listaGestion($gestion1,$gestion2)
 		{
 
 			$sqlListaIM = "
@@ -27,15 +27,16 @@
           	$listaGestion = array();
           	$i = 0;
           	//verificar si hay datos y cargarlos
-            foreach($listaGestion as $list){
+            foreach($listaGestionConsulta as $list){
             	  $objetoGestion = new Gestion();
             	  $objetoGestion->setidGestion($list['idGestion']);
-            	  $objetoGestion->setFechaInscripcionMensualidad($list['Año']);
-            	  $objetoGestion->setCantidad($list['Cantidad']);
-            	  $listaIM[$i] = $objetoInscripcion;
+            	  $objetoGestion->setFecha($list['Año']);
+                  $objetoGestion->setCantidadH($list['Masculino']);
+                  $objetoGestion->setCantidadM($list['Femenino']);
+            	  $listaGestion[$i] = $objetoGestion;
             	  $i++;
 		    }
-			return $listaIM;
+			return $listaGestion;
 		}//end function
 
 	}//end class
