@@ -261,3 +261,113 @@ INSERT INTO Horario(idHorario,idCargo,horarioIngreso,HorarioSalida,estadoTurno,i
 VALUES(null,3,'06:00:00','14:00:00',0,null,null);
 INSERT INTO Horario(idHorario,idCargo,horarioIngreso,HorarioSalida,estadoTurno,ingresoTurno2,salidaTurno2) 
 VALUES(null,4,'06:00:00','14:00:00',0,null,null);
+
+---GESTION
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,1,'2019-01-01 13:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,2,'2019-01-01 14:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,3,'2019-01-01 15:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,4,'2019-01-01 16:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,5,'2019-01-01 17:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,6,'2019-01-01 18:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-01-01 19:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-01-01 10:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,9,'2019-01-01 10:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,10,'2019-01-01 11:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,11,'2019-01-01 12:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,12,'2019-01-01 12:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,13,'2019-01-01 13:50:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,14,'2019-01-01 13:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,15,'2019-01-01 13:30:00');
+
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,16,'2019-01-01 13:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,17,'2019-11-01 14:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,18,'2019-11-01 15:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,19,'2019-11-01 16:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,20,'2019-11-01 17:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,21,'2019-01-01 18:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,22,'2019-01-01 19:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,23,'2019-01-01 19:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,24,'2019-01-01 19:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,25,'2019-01-01 10:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,26,'2019-01-01 10:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,27,'2019-01-01 10:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,28,'2019-01-01 15:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,29,'2019-01-01 14:50:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,30,'2019-01-01 12:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,31,'2019-01-01 11:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,32,'2019-01-01 11:30:00');
+
+
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,33,'2019-01-01 13:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,34,'2019-11-01 14:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,35,'2019-11-01 15:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,36,'2019-11-01 12:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,37,'2019-11-01 12:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,38,'2019-01-01 12:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,39,'2019-01-01 12:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,40,'2019-01-01 12:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,41,'2019-01-01 12:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,42,'2019-01-01 19:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,43,'2019-01-01 17:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,44,'2019-01-01 16:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,45,'2019-01-01 14:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,46,'2019-01-01 12:50:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,47,'2019-01-01 14:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,48,'2019-01-01 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,49,'2019-01-01 14:30:00');
+
+
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,50,'2019-11-01 10:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,51,'2019-11-01 10:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,52,'2019-11-01 10:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,53,'2019-11-01 12:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,54,'2019-11-01 13:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,55,'2019-11-01 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,56,'2019-11-01 15:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,57,'2019-11-01 16:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,58,'2019-11-01 17:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,59,'2019-11-01 18:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,60,'2019-11-01 13:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,61,'2019-01-01 13:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,62,'2019-01-01 13:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,63,'2019-01-01 13:50:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,64,'2019-01-01 13:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,65,'2019-01-01 13:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,66,'2019-01-01 14:30:00');
+
+
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,67,'2019-01-01 09:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,68,'2019-01-01 12:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,69,'2019-01-01 12:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-11-01 13:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-11-01 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-11-01 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-11-01 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-11-01 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-11-01 17:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-11-01 16:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-11-01 17:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-01-01 17:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-01-01 17:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-01-01 17:50:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-01-01 13:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-01-01 13:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,7,'2019-01-01 17:30:00');
+
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-01-01 09:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-01-01 12:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-01-01 12:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-11-01 13:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-11-01 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-11-01 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-11-01 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-11-01 14:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-11-01 17:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-11-01 16:10:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-11-01 17:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-01-01 17:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-01-01 17:20:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-01-01 17:50:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-01-01 13:40:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-01-01 13:30:00');
+INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,8,'2019-01-01 12:30:00');
