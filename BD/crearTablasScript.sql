@@ -4,7 +4,7 @@ USE kantuta;
 
 
 CREATE TABLE Empresa
-( 
+(
   idEmpresa INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   nombre varchar(50) NOT NULL,
   nit varchar(50) NOT NULL
@@ -44,80 +44,82 @@ CREATE TABLE Empleado(
   segundoNombre varchar(20),
   apellidoPaterno varchar(20) NOT NULL,
   apellidoMaterno varchar(20),
-  fechaNacimiendo varchar(20) NOT NULL,
-  codeRFID varchar(20) NOT NULL,
+  fechaNacimiento date NOT NULL,
+  codeRFID varchar(20) UNIQUE   NOT NULL,
   genero ENUM('M','F') NOT NULL,
   fotografia varchar(70),
   numeroCelular varchar(20),
   numeroFijo varchar(20),
   usuario varchar(40) NOT NULL,
-  contraseña varchar(70) NOT NULL,
+  contrasenia varchar(70) NOT NULL,
   activo boolean NOT NULL,
    FOREIGN KEY (idCargo)REFERENCES Cargo(idCargo)ON UPDATE CASCADE ON DELETE CASCADE,
    FOREIGN KEY (idEstadoCivil)REFERENCES EstadoCivil(idEstadoCivil)ON UPDATE CASCADE ON DELETE CASCADE
 )ENGINE=INNODB;
-CREATE TABLE `Asistencia`
+
+
+CREATE TABLE Gestion
 (
-  `idAsistencia` int auto_increment,
-  `idEmpleado` int  UNSIGNED  ,
-  `estado` varchar(20),
-  `horaFechaEntrada` DATETIME,
-  `horaFechaSalida` DATETIME,
-  `TotalHoras` int ,
-  PRIMARY KEY(`idAsistencia`),
-   FOREIGN KEY (idEmpleado)REFERENCES Empleado(idEmpleado)ON DELETE CASCADE
+  idGestion INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  idEmpresa int UNSIGNED NOT NULL ,
+  idEmpleado int UNSIGNED NOT NULL ,
+  Fecha DATETIME NOT NULL,
+  FOREIGN KEY (idEmpresa)REFERENCES Empresa(idEmpresa)ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY (idEmpleado)REFERENCES Empleado(idEmpleado)ON UPDATE CASCADE ON DELETE CASCADE
 )ENGINE=INNODB;
+
+CREATE TABLE Asistencia
+(
+  idAsistencia INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  idEmpleado INT UNSIGNED NOT NULL,
+  horaFechaEntrada DATETIME NOT NULL,
+  horaFechaSalida DATETIME NOT NULL,
+  TotalHoras Double NOT NULL,
+  FOREIGN KEY (idEmpleado)REFERENCES Empleado(idEmpleado)ON UPDATE CASCADE ON DELETE CASCADE
+)ENGINE=INNODB;
+
 CREATE TABLE Vacacion
 (
-  `idVacacion` int auto_increment,
-  `idEmpleado` int UNSIGNED ,
-  `inicioVacacion` date not null,
-  `finVacacion` date not null,
-  PRIMARY KEY(`idVacacion`),
+  idVacacion int auto_increment,
+  idEmpleado int UNSIGNED ,
+  inicioVacacion date not null,
+  finVacacion date not null,
+  PRIMARY KEY(idVacacion),
   FOREIGN KEY (idEmpleado)REFERENCES Empleado(idEmpleado)ON DELETE CASCADE
 )ENGINE=INNODB;
 
-CREATE TABLE `Feriado`
+CREATE TABLE Feriado
 (
-  `idFeriado` int auto_increment ,
-  `fechaInicio`DATETIME ,
-  `fechaFin`DATETIME ,
-  `descripción` text,
-  PRIMARY KEY(`idFeriado`)
+  idFeriado int auto_increment ,
+  fechaInicio  DATETIME ,
+  fechaFin  DATETIME ,
+  descripción text,
+  PRIMARY KEY(idFeriado)
 )ENGINE=INNODB;
 
-CREATE TABLE `Gestion`
+
+CREATE TABLE ReferenciaEmpleado
 (
-  `idGestion` int auto_increment,
-  `idEmpresa` int ,
-  `idEmpleado`int UNSIGNED ,
-  `Fecha` DATETIME,
-  KEY `Pk`(`idGestion`),
-  FOREIGN KEY (idEmpresa)REFERENCES Empresa(idEmpresa)ON DELETE CASCADE,
-  FOREIGN KEY (idEmpleado)REFERENCES Empleado(idEmpleado)ON DELETE CASCADE
-  
+  idReferenciaEmpleado int auto_increment,
+  idEmpleado int UNSIGNED,
+  ci varchar(20),
+  primerNombre varchar(50),
+  segundoNombre varchar(50),
+  apellidoPaterno varchar(50),
+  apellidoMaterno varchar(50),
+  PRIMARY KEY(idReferenciaEmpleado),
+
+  FOREIGN KEY (idEmpleado)REFERENCES Empleado(idEmpleado)ON UPDATE CASCADE ON DELETE CASCADE
+
 )ENGINE=INNODB;
 
-CREATE TABLE `ReferenciaEmpleado`
+CREATE TABLE TipoReferencia
 (
-  `idReferenciaEmpleado` int auto_increment,
-  `IdEmpleado` int UNSIGNED,
-  `ci` varchar(20),
-  `primerNombre` varchar(50),
-  `segundoNombre` varchar(50),
-  `apellidoPaterno` varchar(50),
-  `apellidoMaterno` varchar(50),
-  PRIMARY KEY(`idReferenciaEmpleado`),
-  FOREIGN KEY (idEmpleado)REFERENCES Empleado(idEmpleado)ON DELETE CASCADE
- 
-)ENGINE=INNODB;
-CREATE TABLE `TipoReferencia`
-(
-  `idTipoReferencia` int auto_increment,
-  `idReferenciaEmpleado` int ,
-  `nombre` varchar(20),
-  PRIMARY KEY(`idTipoReferencia`),
-   FOREIGN KEY (idReferenciaEmpleado)REFERENCES ReferenciaEmpleado(idReferenciaEmpleado)ON DELETE CASCADE
+  idTipoReferencia int auto_increment,
+  idReferenciaEmpleado int ,
+  nombre varchar(20),
+  PRIMARY KEY(idTipoReferencia),
+   FOREIGN KEY (idReferenciaEmpleado)REFERENCES ReferenciaEmpleado(idReferenciaEmpleado)ON UPDATE CASCADE ON DELETE CASCADE
  
 )ENGINE=INNODB;
 
