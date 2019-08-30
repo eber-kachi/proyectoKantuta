@@ -1,0 +1,189 @@
+body{
+
+ background: rgba(179,220,237,1);
+		background: -moz-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(179,220,237,1)), color-stop(50%, rgba(41,184,229,1)), color-stop(100%, rgba(0,12,197,1)));
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+		background: -o-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+		background: -ms-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+		background: radial-gradient(ellipse at center, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#000cc5', GradientType=1 );
+		padding:20px 30px;
+		margin: 0px;
+		height: 100%;
+		position: static;
+	}
+
+	h1,h2,h3,h4{
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.caption-style-4{
+		list-style-type: none;
+		margin: 5px;
+		padding: 2px;
+		
+	}
+
+	.caption-style-4 li{
+		float: left;
+		padding: 0px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.caption-style-4 li:hover .caption{
+		opacity: 1;
+	}
+
+	.caption-style-4 li:hover img{
+		opacity: 1;
+		transform: scale(1.15,1.15);
+		-webkit-transform:scale(1.15,1.15);
+		-moz-transform:scale(1.15,1.15);
+		-ms-transform:scale(1.15,1.15);
+		-o-transform:scale(1.15,1.15);
+	}
+
+
+	.caption-style-4 img{
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		z-index: 4;
+	}
+
+
+	.caption-style-4 .caption{
+		cursor: pointer;
+		position: absolute;
+		opacity: 0;
+		-webkit-transition:all 0.45s ease-in-out;
+		-moz-transition:all 0.45s ease-in-out;
+		-o-transition:all 0.45s ease-in-out;
+		-ms-transition:all 0.45s ease-in-out;
+		transition:all 0.45s ease-in-out;
+	}
+
+	.caption-style-4 img{
+		-webkit-transition:all 0.25s ease-in-out;
+		-moz-transition:all 0.25s ease-in-out;
+		-o-transition:all 0.25s ease-in-out;
+		-ms-transition:all 0.25s ease-in-out;
+		transition:all 0.25s ease-in-out;
+	}
+	.caption-style-4 .blur{
+		background-color: rgba(0,0,0,0.65);
+		height: 350px;
+		width: 350px;
+		z-index: 5;
+		position: absolute;
+	}
+
+	.caption-style-4 .caption-text h1{
+		text-transform: uppercase;
+		font-size: 24px;
+	}
+	.caption-style-4 .caption-text{
+		z-index: 10;
+		color: #fff;
+		position: absolute;
+		width: 350px;
+		height: 350px;
+		text-align: center;
+		top:100px;
+	}
+
+
+	/** Nav Menu */
+	ul.nav-menu{
+		padding: 0px;
+		margin: 0px;
+		list-style-type: none;
+		width: 510px;
+		margin: 60px auto;
+	}
+
+	ul.nav-menu li{
+		display: inline;
+		margin-right: 10px;
+		padding:10px;
+		border: 1px solid #ddd;
+	}
+
+	ul.nav-menu li a{
+		color: #eee;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	ul.nav-menu li a:hover, ul.nav-menu li a.active{
+		color: #2c3e50;
+	} 
+
+	/** content **/
+	.content{
+		margin-top: 100px;
+		margin-left: 100px;
+		width: 700px;
+	}
+	.content h1, .content h2{
+		color: #ecf0f1;
+		padding: 0px;
+		margin: 0px;
+		font-weight: normal;
+	}
+
+	.content h1{
+		font-weight: 900;
+		font-size: 64px;
+	}
+
+	.content h2{
+		font-size:26px;
+	}
+
+	.content p{
+		color: #ecf0f1;
+		line-height: 28px;
+		font-size: 15px;
+		padding-top: 50px;
+	}
+
+	p.credit{
+		padding-top: 20px;
+		font-size: 12px;
+	}
+
+	p a{
+		color: #ecf0f1;
+	}
+
+	/** fork icon**/
+	.fork{
+		position: absolute;
+		top:0px;
+		left: 0px;
+	}
+	.imgVMI{
+		width: 350px;
+		height: 350px;
+	}
+	.exit{
+		font-size: 35px;
+		color: black;
+		background: #ffffff;
+		text-decoration: none;
+		border-radius: 20%;
+		border: 2px solid black;
+		margin: 2px;
+	}
+	.exit:hover{
+		border-radius:20%;
+		-webkit-border-radius:20%;
+		box-shadow: 0px 0px 15px 15px #ec731e;
+		-webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+	}

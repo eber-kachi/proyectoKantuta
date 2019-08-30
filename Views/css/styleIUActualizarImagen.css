@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: green;
+}
+header{
+    background: rgba(26,153,12,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(26,153,12,1)), color-stop(4%, rgba(24,245,12,1)), color-stop(53%, rgba(147,240,93,1)), color-stop(100%, rgba(13,107,2,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+background: radial-gradient(ellipse at center, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a990c', endColorstr='#0d6b02', GradientType=1 );
+}
+main{
+    padding: 40px;
+}
+.content-all{
+    width: 100%; 
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    }
+.regImgForm{
+ top: 2%;
+ left: 1%;
+ border: 4px solid #34495e;
+ font-weight: bolder;
+ width: 320px;
+ height: 400px;
+ margin: auto;
+}
+.selecImg{
+    top: 300px;
+}
+.selecImg1{
+    top: 320px;
+}
+.btnRegForm{
+    top: 350px;
+    left: 250px;
+    font-weight: bold;
+    margin: auto;
+}
+.mostrarImgForm{
+    padding: 2px;
+    width: 200px;
+    margin: auto;
+}
+.mostrarImgForm button{
+    font-weight: bold;
+    left: 1.5%;
+    top: 375px;
+}
+.imgActualizar{
+    width: 150px;
+    height: 150px;
+    margin-left: 85px;
+    border: 1px solid #34495e;
+}
+.btnRegForm:hover{
+    width: 70px;
+    height: 20px;
+    background: aliceblue;
+}
+.mostrarImgForm button:hover{
+    width: 200px;
+    height: 25px;
+    background: aliceblue;
+}
+/* .selecImg1:hover{
+    width: 280px;
+    height: 22px;
+    background: aliceblue;
+} */

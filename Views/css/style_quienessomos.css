@@ -1,0 +1,102 @@
+.somosFundacion{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    height:60%;
+    border: 8px outset black;
+}
+.quienes_somos{
+    top: 70%;
+    left: 25%;
+    margin: auto;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 1000;
+    text-align: center;
+    width: 50%;
+}
+.tbconceptosqs{
+    position: relative;
+    left: 20%;
+}
+.footerqs{
+    position: relative;
+    width: 100%;
+    top: 0px;
+}
+.titulopieqs{
+/*     position: relative;
+ */            margin: auto;
+    color: #ffffff;
+}
+.infopieqs{
+/*     position: relative;
+ */            margin: auto;
+    color: #ffffff;
+}
+.imgqs{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+.imgqs2{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+.tituloqs{
+    text-align: center;
+}
+
+.tdconceptosqs1{
+/*     position: relative;
+ */    width: 365px;
+            margin: auto;
+   
+}
+.tdconceptosqs2{  
+    margin: auto;
+    width: 350px;
+}
+p{
+    font-weight: bold;
+                margin: auto;
+
+}
+@media (max-width:1600px){
+    .somosFundacion{
+        position: relative;
+        left: 25%;
+        top: 150px;
+        margin: auto;
+        text-align: center;
+        }
+        .quienes_somos{
+            margin: auto;
+                }
+    .tdconceptosqs1{
+        position: relative;
+        margin: auto;
+    }
+    .imgqs{
+        margin: auto;
+        position: relative;
+    }
+    .tdconceptosqs2{
+        position: relative;
+                    margin: auto;
+
+    }
+    .imgqs2{
+                   margin: auto;
+
+        position: relative;
+    }
+    .tbconceptosqs{
+    left: 10%;
+}
+    .footerqs{
+        position: relative;
+    }
+}

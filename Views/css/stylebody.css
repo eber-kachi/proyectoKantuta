@@ -1,0 +1,124 @@
+body {
+
+   
+/*   font-family: oswald, Arial, Helvetica, sans-serif; */
+    position: relative;
+    height: 10%;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(179,220,237,1)), color-stop(50%, rgba(41,227,84,1)), color-stop(100%, rgba(188,224,238,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,227,84,1) 50%, rgba(188,224,238,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,227,84,1) 50%, rgba(188,224,238,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,227,84,1) 50%, rgba(188,224,238,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(179,220,237,1) 0%, rgba(41,227,84,1) 50%, rgba(188,224,238,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );
+}
+.glob{
+    position: relative;
+    top: 920px;
+}
+.efectofondo{
+    position: fixed;
+    width: 100%;
+}
+.set{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.set div{
+    position: fixed;
+    display: block;
+}
+.set div:nth-child(1)
+{
+    left: 0.1%;
+    animation: animate 15s linear infinite;
+    animation-delay: -7s;
+}
+
+.set div:nth-child(2)
+{
+    left: 5%;
+    animation: animate 20s linear infinite;
+    animation-delay: -5s;
+}
+.set div:nth-child(3)
+{
+    left: 27%;
+    animation: animate 25s linear infinite;
+    animation-delay: -9s;
+}
+.set div:nth-child(4)
+{
+    left: 50%;
+    animation: animate 20s linear infinite;
+    animation-delay: -3s;
+}
+
+.set div:nth-child(5)
+{
+    left: 55%;
+    animation: animate 15s linear infinite;
+    animation-delay: -1s;
+}
+.set div:nth-child(6)
+{
+    left: 77%;
+    animation: animate 25s linear infinite;
+}
+.set div:nth-child(7)
+{
+    left: 18%;
+    animation: animate 25s linear infinite;
+}
+.set div:nth-child(8)
+{
+    left: 62%;
+    animation-delay: -8s;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    10%
+    {
+        opacity: 1;
+    }
+    20%
+    {
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40%
+    {
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60%
+    {
+        transform: translateX(20px) rotate(135deg);
+    }
+    80%
+    {
+        transform: translateX(-20px) rotate(180deg);
+    }
+    100%
+    {
+        top: 110%;
+        transform: translateX(-20px) rotate(225deg);
+    }
+}
+.set2{
+    position: fixed;
+    transform: scale(-0.8) rotateY(180deg);
+    filter:blur(0px);
+}
+.set3{
+    position: fixed;
+    transform: scale(0.8) rotateX(180deg);
+    
+}

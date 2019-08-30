@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	
+
+}
+body{
+ background: #000CC5;
+}
+main{
+	background: rgba(179,220,237,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(179,220,237,1)), color-stop(50%, rgba(41,184,229,1)), color-stop(100%, rgba(0,12,197,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#000cc5', GradientType=1 );
+	width: 100%;
+	height: auto;
+	 
+	position: absolute;
+}
+.content-all{
+width: 100%;
+max-width: 1000px;
+background: #000CC5;
+margin: auto;
+margin-top: 80px;
+border: 1px solid white;
+}
+header{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #000CC5;
+
+}
+#check{
+	display: none;}
+#check:checked ~ .menu{
+width: 400px;
+}
+
+.menu{
+	position: fixed;
+	top: 60px;
+	width: 1px;
+	height: 100vh;
+	background: #FFFFFF;
+	transition: all 300ms cubic-bezier(1,0,0,1);
+	transition-timing-function: cubic-bezier(1,0,0,1); 
+	overflow: hidden;
+}
+.menu li{
+	list-style: none;
+	padding: 15px;
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: all 300ms;
+	display: block;
+	width: 400px;
+}
+.menu li:hover{
+	background: rgba(0, 0, 0, 0.2);
+
+}
+article
+{
+padding: 40px;
+}
+.content-all label{
+position: fixed;
+width: 100%;
+max-width: 1000px;
+top: 14px;
+font-size: 26px;
+color: white;
+cursor: pointer;
+z-index: 10;
+}
+.content-all h2
+{
+	position: fixed;
+	width: 100%;
+	max-width: 1000px;
+	top: 14px;
+	font-size: 26px;
+	text-align: right;
+	color: white;
+}
+
+article h1
+{
+font-size: 30px;
+color: white;
+font-weight: 100;
+margin-top: 40px;
+}
+article .parrafo1{
+	font-size: 30px;
+	color: white;
+	margin-top: 40px;
+	letter-spacing: 2px;
+}
+article img{
+	width: 100%;
+	border: 4px solid white;
+	margin-top: 40px;
+}
+a{
+	font-weight: bold;
+	text-decoration: none;
+}
+.icon-menu:hover{
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+}

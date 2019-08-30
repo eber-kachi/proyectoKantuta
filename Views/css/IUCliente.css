@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: green;
+}
+header{
+   background: rgba(26,153,12,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(26,153,12,1)), color-stop(4%, rgba(24,245,12,1)), color-stop(53%, rgba(147,240,93,1)), color-stop(100%, rgba(13,107,2,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+background: radial-gradient(ellipse at center, rgba(26,153,12,1) 0%, rgba(24,245,12,1) 4%, rgba(147,240,93,1) 53%, rgba(13,107,2,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a990c', endColorstr='#0d6b02', GradientType=1 );
+}
+main{
+    padding: 40px;
+}
+.content-all{
+    width: 100%; 
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    }
+.formCliente{
+    width: 360px;
+    height: 170px;
+    top: 20px;
+    left: 20px;
+    border: 3px solid #34495e;
+    margin: auto;
+}
+.btnAceptar{
+    left: 150px;
+    font-weight: bold;
+}
+.btnCancelar{
+    /* margin-left: 265px; */
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.verLista{
+    top: 180px;
+    font-size: 20px;
+    border: 2px solid #34495e;
+    background: green;
+    font-family: 'Times New Roman', Times, serif;
+}
+.volverAtras{
+    top: 180px;
+    left: 100px;
+    border: 2px solid #34495e;
+    text-decoration: none;
+    font-size: 20px;
+    background: green;
+    color: black;
+}
+.verLista:hover{
+    color: #ffffff;
+    background: black;
+    font-weight: bold;
+}
+.volverAtras:hover{
+    color: aliceblue;
+    background: black;
+    font-weight: bold;
+}
+/* MostrarCliente */
+.tableMostrar{
+    top: 60px;
+    left: 20px;
+    border: 3px solid #34495e;
+    margin: auto;
+}
+.eliminar{
+    text-decoration: none;
+}
+.btnRegCliente{
+    top: 20px;
+    left: 20px;
+    border: 2px solid #34495e;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background: green;
+    width: 170px;
+   
+}
+.volverMenu{
+    top: 20px;
+    left: 200px;
+    text-decoration: none;
+    border: 2px solid #34495e;
+    background: green;
+    width: 120px;
+    color: black;
+    font-size: 20px;
+}
+.btnRegCliente:hover{
+    font-weight: bold;
+    color: #ffffff;
+}
+.volverMenu:hover{
+    font-weight: bold;
+    color: #ffffff;
+}
+.eliminar:hover{
+    background: green;
+    color: #ffffff;
+    font-weight: bold;
+}
+.btnsMostrar{
+    width: 235px;
+    margin: auto;
+}

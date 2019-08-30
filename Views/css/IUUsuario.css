@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    font-family: sans-serif;
+}
+body{
+    background:blue;
+}
+header{
+background: rgba(179,220,237,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(179,220,237,1)), color-stop(50%, rgba(41,184,229,1)), color-stop(100%, rgba(0,12,197,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(0,12,197,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#000cc5', GradientType=1 );
+
+}
+main{
+    padding: 40px;
+   
+}
+.content-all{
+    width: 100%; 
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+
+    }
+main .formUsuario{
+    margin: auto;
+    width: 340px;
+	border: 4px solid white;
+}
+.formUsuario{
+    border: 5px solid #34495e;
+}
+
+.btnUsuario{
+    margin-left: 150px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.btnCancelar{
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.verlista{
+    /* margin-bottom:px; */
+    margin-left: 220px;
+}
+.volveratras{
+    text-decoration: none;
+    margin: 2px;
+    color: black;
+    margin-bottom: 256px;
+    margin-left:220px;
+    font-weight:bold;
+    border-radius: : 20px;
+    border: 2px solid #ffffff;
+    background: green;
+}
+.volveratras:hover{
+    color: green;
+    background: #ffffff;
+    font-size:20px;
+    font-weight: bold;
+}
+/* pag. LogicaMostrarUsuariostabla */
+.tableUsuario{
+    background:green;
+    border: 3px solid #34495e;
+    position: relative;
+    top: 0px;
+}
+.eliminar{
+    text-decoration: none;
+    color: #34495e;
+}
+.eliminar:hover{
+    color: azure;
+    background: green;
+    font-weight: bold;
+}
+.titulosuperior{
+    font-weight: bold;
+}
+.btnReg{
+    background: green;
+    position: relative;
+    top: 10px;
+    width: 270px;
+    left: 10px;
+}
+.letrareg{
+    font-weight: bold;
+}
+.volverMenu{
+    position: relative;
+    left: 595px;
+    border: 2px solid #34495e;
+    top: -6px;
+    text-decoration: none;
+    background: green;
+    color: aliceblue;
+}
+.volverMenu:hover{
+    font-size: 20px;
+    color: green;
+    background: aliceblue;
+}

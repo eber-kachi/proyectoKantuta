@@ -1,0 +1,47 @@
+.iniciarsesion{
+    /*font: 10px Verdana;*/
+    
+    text-decoration: none;
+    color: #ffffff;
+    background:  black;
+    padding: 3px 10px 3px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    position: fixed;
+    border: 2px solid #ffffff;
+    top: 1.5%;
+    left:71%;
+}
+.iniciarsesion:hover{
+    position: fixed;
+    background: beige;
+    color: burlywood;
+    transition: background-color 0.90s;
+}
+.registrarse{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    background:  black;
+    padding: 3px 10px 3px 10px;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    position: fixed;
+    left: 79%;
+    top: 1.5%;
+}
+.header1 .registrarse:hover{
+    position: fixed;
+    background: beige;
+    color: burlywood;
+    transition: background 0.90s;
+}
+.header1{
+    position: fixed;
+    z-index: 1000;
+}
+.loginis{
+    position: fixed;
+    z-index: 1000;
+ 
+}
