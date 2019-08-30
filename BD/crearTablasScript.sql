@@ -27,11 +27,11 @@ CREATE TABLE Horario
 (
   idHorario INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   idCargo int UNSIGNED,
-  horarioIngreso DATETIME NOT NULL ,
-  HorarioSalida DATETIME NOT NULL ,
+  horarioIngreso TIME NOT NULL ,
+  HorarioSalida TIME NOT NULL ,
   estadoTurno boolean NOT NULL,
-  ingresoTurno2 DATETIME ,
-  salidaTurno2 DATETIME ,
+  ingresoTurno2 TIME ,
+  salidaTurno2 TIME ,
   FOREIGN KEY(idCargo) REFERENCES Cargo(idCargo) ON UPDATE CASCADE ON DELETE CASCADE
 )ENGINE=INNODB;
 

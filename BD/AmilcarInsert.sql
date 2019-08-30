@@ -228,3 +228,19 @@ VALUES(null,3,2,'833','Aide','Rosita','Morales','Conde','2002-10-17','22323323',
 INSERT INTO Empleado(idEmpleado,idCargo,idEstadoCivil,CI,primerNombre,segundoNombre,apellidoPaterno,apellidoMaterno,fechaNacimiento,codeRFID,
 genero,fotografia,numeroCelular,numeroFijo,usuario,contrasenia,activo) 
 VALUES(null,'834','Sara','','Martinez','Garza','2001-10-17','22323323','M',null,'6454534','2334999','bdias785','785',true);
+
+--INSERT HORARIO
+CREATE TABLE Horario
+(
+  idHorario INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  idCargo int UNSIGNED,
+  horarioIngreso TIME NOT NULL ,
+  HorarioSalida TIME NOT NULL ,
+  estadoTurno boolean NOT NULL,
+  ingresoTurno2 TIME ,
+  salidaTurno2 TIME ,
+  FOREIGN KEY(idCargo) REFERENCES Cargo(idCargo) ON UPDATE CASCADE ON DELETE CASCADE
+)ENGINE=INNODB;
+
+INSERT INTO Horario(idHorario,idCargo,horarioIngreso,HorarioSalida,estadoTurno,ingresoTurno2,salidaTurno2) 
+VALUES(null,2,);
