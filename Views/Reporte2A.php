@@ -40,17 +40,17 @@ Highcharts.chart('container', {
         type: 'bar'
     },
     title: {
-        text: 'Historial de Inscritos de los estudiantes'
+        text: 'Historial de Empleados por gestion'
     },
     subtitle: {
-        text: 'Nivel: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+        text: 'Cantidad:........................'
     },
     xAxis: {
         categories: [
             <?php 
-                foreach($listaIM as $objInscripcion){
+                foreach($listaGestion as $objGestion){
                ?>
-               '<?php echo $objInscripcion->getFechaInscripcionMensualidad();?>',
+               '<?php echo $objGestion->getFecha();?>',
 
             <?php        
                 }
@@ -65,7 +65,7 @@ Highcharts.chart('container', {
     yAxis: {
         min: 0,
         title: {
-            text: 'Inscritos (cantidad)',
+            text: 'Varones (cantidad)',
             align: 'high'
         },
         labels: {
@@ -116,17 +116,18 @@ Highcharts.chart('container', {
         data: [1216, 1001, 4436, 738, 40]
     }
     */
-    name: 'Inscritos',
+    name: 'Empleados por año',
     data:[
             <?php 
-                foreach($listaIM as $objInscripcion){
+                foreach($listaGestion as $objGestion){
             ?>
-               <?php echo $objInscripcion->getCantidad();?>,
-
+               <?php echo $objGestion->getCantidadH();?>,
+               <?php echo $objGestion->getCantidadM();?>,
             <?php        
                 }
             ?>
     ]//datos
+    
  
     }
     ]//Termina el arreglo
