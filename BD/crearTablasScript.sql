@@ -10,11 +10,15 @@ CREATE TABLE Empresa
   nit varchar(50) NOT NULL
 )ENGINE=INNODB;
 
+CREATE TABLE TURNO(
+idTurno int not null  auto_increment PRIMARY KEY,
+nombre varchar(20) not null  
+);
 CREATE TABLE Cargo
 (
   idCargo INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   nombre varchar(30) NOT NULL,
-  flexible boolean NOT NULL
+  esFlexible boolean NOT NULL
 )ENGINE=INNODB;
 CREATE TABLE EstadoCivil
 (

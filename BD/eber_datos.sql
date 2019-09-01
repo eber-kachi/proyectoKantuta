@@ -1,7 +1,7 @@
 use kantuta;
 -- se inserto datos de cargo 
 INSERT INTO cargo
-  (nombre,flexible)
+  (nombre,esFlexible)
 VALUES
   ('Administrador', 0),
   ('Secretaria', 0),
@@ -11,7 +11,9 @@ VALUES
   ('Seguridad', 0),
   ('Almacenero', 0),
   ('Chofer', 0),
-  ('Prensista',0);
+  ('Prensista',0),
+  ('Distribuidor',0);
+
 -- agregando estado civil
 insert into estadocivil
   ( nombre)
@@ -119,22 +121,38 @@ INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,100,'2
 INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,101,'2018-01-02 19:10:00');
 INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,102,'2018-01-02 17:20:00');
 
-
+-- insertando turno de horario
+insert into turno(nombre)
+values('Fijo'),
+      ('Mañana'),
+      ('Tarde');
 
 -- insertando horario  desde contador 
+-- insertando horario  desde contador
+--  ('Administrador', 0), 1
+--   ('Secretaria', 0),   2
+--   ('Obrero', 0),       3
+--   ('Supervisor', 0),   4
+  -- ('Contador', 0),     5
+  -- ('Seguridad', 0),    6
+  -- ('Almacenero', 0),   7ii
+  -- ('Chofer', 0),       8
+  -- ('Prensista',0);     9ii
+  --('Distibuidor');      10
 
-  -- ('Contador', 0),   5
-  -- ('Seguridad', 0),  6 
-  -- ('Almacenero', 0), 7ii
-  -- ('Chofer', 0),     8
-  -- ('Prensista',0);   9ii
-
-insert INTO horario(idHoraio,idCargo,horarioIngreso,HorarioSalida,estadoTurno,ingresoTurno2,salidaTurno2)
-values(null,5,'08:00:00','12:00:00',1,'14:00:00','18:00:00'),
-values(null,6,'08:00:00','20:00:00',1,null,null),
-values(null,7,'06:00:00','14:00:00',1,'14:00:00','22:00:00'),
-values(null,8,'08:00:00','12:00:00',0,null,null),
-values(null,9,'06:00:00','14:00:00',0,null,null),
+insert INTO horario(idHoraio,idCargo,idTurno, horarioIngreso,horarioSalida)
+values(null,2,2,'08:00:00','12:00:00'),
+      (null,3,2,'06:00:00','14:00:00'),
+      (null,3,3,'14:00:00','22:00:00'),
+      (null,4,2,'06:00:00','14:00:00'),
+      (null,4,3,'14:00:00','22:00:00'),
+      (null,5,2,'08:00:00','12:00:00'),
+      (null,6,1,'08:00:00','20:00:00'),
+      (null,7,2,'06:00:00','14:00:00'),
+      (null,8,1,'08:00:00','12:00:00'),
+      (null,9,2,'06:00:00','14:00:00'),
+      (null,9,3,'06:00:00','14:00:00'),
+      (null,10,1,'08:00:00','12:00:00');
 
 
 
