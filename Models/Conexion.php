@@ -11,13 +11,14 @@
 		{
 			try {
 				  parent::__construct($this->tipoDB.':host='.$this->servidor.';dbname='.$this->db, $this->user, $this->password);
-				 //echo "Conexion exitosa"." JACC";
-			} catch (PDOException $e ) {
+				  echo "Conexion exitosa"." JACC";
+			} 
+			catch (PDOException $e ) {
 				echo 'ERROR: No se logro hacer una conexion a la Base de Datos - '.$e->getMessage();
 				exit;
 			}
 		}
 	}
-		//$con = new Conexion();
+		$con = new Conexion();
 	//camtasia editor de videos
  ?>
