@@ -5,6 +5,7 @@ class Gestion
     private $idEmpresa;
     private $idEmpleado;
     private $fecha;
+    
     private $cantidadH;
     private $cantidadM;
 
