@@ -158,7 +158,41 @@ values(null,1,2,'08:00:00','12:00:00'),-- Secretaria
       (null,10,1,'14:00:00','18:00:00');-- Distibuidor
 
 
+-- llenando asistencia de empleado id 3 (roca carlos)
 
+insert into asistencia (idEmpleado, horaFechaEntrada, horaFechaSalida, TotalHoras)
+values (3, '2019-08-26 06:00:06', '2019-08-26 14:00:15', 8.0),
+        (3, '2019-08-27 06:01:06', '2019-08-27 14:00:15', 7.99),
+        (3, '2019-08-28 06:00:06', '2019-08-28 14:00:15', 8.0),
+        (3, '2019-08-29 06:05:06', '2019-08-29 14:00:15', 7.95),
+        (3, '2019-08-30 06:20:06', '2019-08-30 14:30:15', 8.0);
+
+-- llenando asistencia de empleado id 3 (roca carlos)
+
+insert into asistencia (idEmpleado, horaFechaEntrada, horaFechaSalida, TotalHoras)
+values (4, '2019-08-26 06:00:06', '2019-08-26 14:00:15', 8.0),
+        (4, '2019-08-27 06:01:06', '2019-08-27 14:00:15', 7.99),
+        (4, '2019-08-28 06:00:06', '2019-08-28 14:00:15', 8.0),
+        (4, '2019-08-29 06:05:06', '2019-08-29 14:00:15', 7.95),
+        (4, '2019-08-30 06:20:06', '2019-08-30 14:30:15', 8.10);
+
+
+-- viendo los datos de
+SELECT CONCAT_WS(' ',e.apellidoPaterno,e.apellidoMaterno,e.primerNombre,e.segundoNombre) as Empleado,
+       (ELT(WEEKDAY(DATE(a.horaFechaEntrada)) + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo')) AS DIA,
+       a.TotalHoras as HorasTrabajadas, c.nombre AS Cargo,
+	   IF(c.esFlexible,'Horario Flexible','Horario Fijo') AS TipoHorario,
+	   h.horarioIngreso, h.horarioSalida
+	   -- t.nombre AS Turno
+FROM empleado e INNER JOIN asistencia a
+ON e.idEmpleado = a.idEmpleado AND e.idEmpleado = 3
+AND DATE(a.horaFechaEntrada) = '2019-08-26'
+INNER JOIN cargo c
+ON e.idCargo = c.idCargo
+INNER JOIN horario h
+ON c.idCargo = h.idCargo
+INNER Join turno t
+ON h.idTurno = t.idTurno AND t.idTurno = 1;
 
 
 
