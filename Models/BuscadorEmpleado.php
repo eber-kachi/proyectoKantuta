@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php 
 class BuscadorEstudiante
 	{
@@ -12,15 +11,11 @@ class BuscadorEstudiante
 		public function listaEmpleado()
 		{
 			$sqlListaDeEstudiantes = "
-			SELECT E.codigoEstudiante, CONCAT_WS(' ',E.apellidoPaterno,E.apellidoMaterno,E.primerNombre,E.segundoNombre) nombreCompleto, E.fotografia, A.fechaHoraAsistencia, N.nombre as nombreNivel, H.hora as hora, (TIME(A.fechaHoraAsistencia)) as horaIngreso, ((TIME(A.fechaHoraAsistencia))-(h.hora)) as atraso 
-			FROM Estudiante E, InscripcionMensualidad IM, Asistencia A, HorarioAsignadoInstructor HAI, Horario H, Nivel N
-			WHERE DATE(A.fechaHoraAsistencia) = '2019-06-19'
-			AND A.codigoInscripcionMensualidad = IM.codigoInscripcionMensualidad
-			AND IM.codigoEstudiante = E.codigoEstudiante
-			AND IM.codigoGestion >= 9
-			AND IM.codigoHorarioAsignadoInstructor = HAI.codigoHorarioAsignadoInstructor
-			AND HAI.codigoHoraInicio = H.codigoHorario
-			AND HAI.codigoNivel = N.codigoNivel
+			SELECT E.codigoUsuario,CONCAT_WS(' ',E.apellidoPaterno,E.apellidoMaterno,E.primerNombre,E.segundoNombre) nombreCompleto,
+			       E.CI,E.idCargo ,C.nombre, if(C.esFlexible=true,"Flexible","No Flexible") as 'FLEXIBILIDAD'
+			FROM Empleado E join Cargo C
+			WHERE E.idCargo = C.idCargo
+			ORDER BY E.apellidoPaterno,E.apellidoMaterno,E.primerNombre,E.segundoNombre,u.CI;
 			ORDER BY A.codigoAsistencia desc;
 								";
 			$cmd = $this->conexion->prepare($sqlListaDeEstudiantes);
@@ -164,4 +159,3 @@ class BuscadorEstudiante
 			return $listaEmpleado;
 		}// fin funcion Lista de usuario
     }
->>>>>>> f14f3f675c46e165684b17af4a5a5b49b8e67bf1

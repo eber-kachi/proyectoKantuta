@@ -22,6 +22,9 @@ class Empleado
     private $contrasenia;
     private $activo;
 
+    private $nombreFlexible;
+    public $nombre;
+    public $nombreCompleto;
     function __construct()
     { }
 
@@ -44,6 +47,11 @@ class Empleado
     public function setusuario($usuario){$this->usuario = $usuario;}
     public function setcontrasenia($contraseña){$this->contraseña = $contraseña;}
     public function setactivo($activo){$this->activo = $activo;}
+
+    public function setnombreFlexible($nombreFlexible){$this->nombreFlexible = $nombreFlexible;}
+    public function setNombreCompleto($nombreCompleto){$this->nombreCompleto = $nombreCompleto;}
+    public function setNombre($nombre){$this->nombre = $nombre;}
+
     //get
     public function getidEmpleado(){return $this->idEmpleado;}
     public function getidCargo(){return $this->idCargo;}
@@ -63,4 +71,9 @@ class Empleado
     public function getusuario(){return $this->usuario;}
     public function getcontrasenia(){return $this->contrasenia;}
     public function getactivo(){return $this->activo;}
+
+    public function getnombreFlexible(){return $this->nombreFlexible;}
+    public function getNombreCompleto(){return $this->nombreCompleto;}
+    public function getNombre(){return $this->nombre;}
+
 }
