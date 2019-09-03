@@ -135,24 +135,25 @@ values('Fijo'),
 --   ('Supervisor', 0),   4
   -- ('Contador', 0),     5
   -- ('Seguridad', 0),    6
-  -- ('Almacenero', 0),   7ii
+  -- ('Almacenero', 0),   7
   -- ('Chofer', 0),       8
-  -- ('Prensista',0);     9ii
+  -- ('Prensista',0);     9
   --('Distibuidor');      10
 
 insert INTO horario(idHoraio,idCargo,idTurno, horarioIngreso,horarioSalida)
-values(null,2,2,'08:00:00','12:00:00'),
-      (null,3,2,'06:00:00','14:00:00'),
-      (null,3,3,'14:00:00','22:00:00'),
-      (null,4,2,'06:00:00','14:00:00'),
-      (null,4,3,'14:00:00','22:00:00'),
-      (null,5,2,'08:00:00','12:00:00'),
-      (null,6,1,'08:00:00','20:00:00'),
-      (null,7,2,'06:00:00','14:00:00'),
-      (null,8,1,'08:00:00','12:00:00'),
-      (null,9,2,'06:00:00','14:00:00'),
-      (null,9,3,'06:00:00','14:00:00'),
-      (null,10,1,'08:00:00','12:00:00');
+values(null,1,2,'08:00:00','12:00:00'),-- Secretaria
+      (null,1,2,'14:00:00','18:00:00'),-- Secretaria
+      (null,3,2,'06:00:00','14:00:00'),-- Obrero
+      (null,3,3,'14:00:00','22:00:00'),-- obrero
+      (null,4,2,'06:00:00','14:00:00'),-- supervisor
+      (null,4,3,'14:00:00','22:00:00'),-- supervisor 
+      (null,5,2,'08:00:00','12:00:00'),-- Contador
+      (null,6,1,'08:00:00','20:00:00'),-- Seguridad
+      (null,7,2,'06:00:00','14:00:00'),-- Almacenero
+      (null,8,1,'08:00:00','12:00:00'),-- Chofer
+      (null,9,2,'06:00:00','14:00:00'),-- Prensista
+      (null,9,3,'06:00:00','14:00:00'),-- Prensista
+      (null,10,1,'08:00:00','12:00:00');-- Distibuidor
 
 
 
