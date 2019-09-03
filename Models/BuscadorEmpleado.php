@@ -15,7 +15,7 @@
             e.fechaNacimiento,e.codeRFID,e.genero,e.fotografia,e.numeroCelular,e.numeroFijo,Usuario,e.contrasenia,e.activo 
 								 FROM Empleado as e
 								 JOIN Cargo as c on c.idCargo = e.idCargo
-                                 JOIN EstadoCivil as ec on ec.idEstadoCivil = e.EstadoCivil
+                                 JOIN estadoCivil as ec on ec.idEstadoCivil = e.EstadoCivil
 								 ORDER BY Empleado;";
 
 			$cmd = $this->conexion->prepare($sqlListaDeEmpleado);

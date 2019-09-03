@@ -1,7 +1,7 @@
 <?php 
 	//require_once('Conexion.php');
-	require_once('..ProyectoKantuta/..Models/Empleado.php');
-	require_once('BuscadorEmpleado.php');
+	//require_once('..ProyectoKantuta/..Models/Empleado.php');
+	include_once('../BuscadorEmpleado.php');
 	$objetoBuscadorEmpleado = new BuscadorEmpleado();
 	$listaDeEmpleado = array();
 	$listaDeEmpleado = $objetoBuscadorEmpleado->listaDeEmpleado();
@@ -11,8 +11,8 @@
 <head>
     <meta charset="utf-8">
 	<title>Usuario</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css1/bootstrap.min.css1">
+    <link rel="stylesheet" href="css1/estilo.css1">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
@@ -26,7 +26,7 @@
 		<p>
 		<div class="table-responsive container">
 		<table class="table" border=1>
-			<tr bgcolor="#3399ff">
+			<tr bgcolor="#33d3ff">
 				<th>Empleado</th>
 				<th>Fecha Nacimiento</th>
 				<th>Genero</th>
