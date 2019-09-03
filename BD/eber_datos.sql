@@ -24,7 +24,7 @@ values
 -- se esta rellenando  la tabla empleado con 40 datos 
 
 INSERT INTO empleado
-  (idEmpleado,idCargo, idEstadoCivil, Ci, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contrasenia, activo)
+  (idEmpleado,idCargo, idEstadoCivil, ci, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, codeRFID, genero, fotografia, numeroCelular, numeroFijo, usuario, contrasenia, activo)
 values(null,1, 2, '34653-CB', 'Manuel', 'Carlos', 'Medrano', 'Flores', '1972-03-05', 'busfdv21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
       (null,2, 2 , '34363-CB', 'Mauricio', 'Andres', 'Zespedes', 'Catari', '1991-03-20', 'bsusdv21', 'M', 'Foto', '7587641', '4390769', 'mauricio', '1234', 1),
       (null,3, 2 , '34563-CB', 'Roca', 'Carlos', 'Medrano', 'Flores', '1972-03-05', 'busadv21', 'M', 'Foto', '7523641', null, 'roca', '1234', 1),
@@ -51,7 +51,7 @@ values(null,1, 2, '34653-CB', 'Manuel', 'Carlos', 'Medrano', 'Flores', '1972-03-
       (null,8, 3 , '314561-CB', 'Rosendo', 'Pedro', 'Miranda', null, '2000-10-05', 'a5b5ausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
       (null,8, 3 , '342561-CB', 'Rompe', 'Rene', 'MiraFlor', 'Tapia', '1992-10-05', 'abau24sdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
       (null,8, 3 , '324561-CB', 'Marco', null, 'Goni', 'Tarqui', '1992-10-05', '2ab4ausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
-      (null,8, 3 , '234561-CB', 'Marcelo', 'Pedro', 'Carros', 'Moreno', '1982-10-05', '44abausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
+      (null,8, 3 , '234561-CB', 'Marcelo', 'Pedro', 'Carros', 'Moreno', '1982-10-05', '44abausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1);
     
 
       (null,8, 3 , '7345612-CB', 'Rojelio', null, 'Gomez', null, '1992-10-05', 'abausdva213', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
