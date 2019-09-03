@@ -30,19 +30,21 @@ CREATE TABLE Horario
 (
   idHorario INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   idCargo int UNSIGNED,
+  idTurno int UNSIGNED,
   horarioIngreso TIME NOT NULL ,
   HorarioSalida TIME NOT NULL ,
   estadoTurno boolean NOT NULL,
   ingresoTurno2 TIME ,
   salidaTurno2 TIME ,
-  FOREIGN KEY(idCargo) REFERENCES Cargo(idCargo) ON UPDATE CASCADE ON DELETE CASCADE
+  FOREIGN KEY(idCargo) REFERENCES Cargo(idCargo) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY(idTurno) REFERENCES Turno(idTurno) ON UPDATE CASCADE ON DELETE CASCADE
 )ENGINE=INNODB;
 
 CREATE TABLE Empleado(
   idEmpleado INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   idCargo int UNSIGNED NOT NULL,
   idEstadoCivil int UNSIGNED NOT NULL ,
-  CI varchar(40) NOT NULL,
+  ci varchar(40) NOT NULL,
   primerNombre varchar(20) NOT NULL,
   segundoNombre varchar(20),
   apellidoPaterno varchar(20) NOT NULL,
@@ -66,7 +68,7 @@ CREATE TABLE Gestion
   idGestion INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   idEmpresa int UNSIGNED NOT NULL ,
   idEmpleado int UNSIGNED NOT NULL ,
-  Fecha DATETIME NOT NULL,
+  fecha DATETIME NOT NULL,
   FOREIGN KEY (idEmpresa)REFERENCES Empresa(idEmpresa)ON UPDATE CASCADE ON DELETE CASCADE,
   FOREIGN KEY (idEmpleado)REFERENCES Empleado(idEmpleado)ON UPDATE CASCADE ON DELETE CASCADE
 )ENGINE=INNODB;

@@ -1,7 +1,6 @@
 <?php 
-	//require_once('Conexion.php');
-	//require_once('..ProyectoKantuta/..Models/Empleado.php');
-	include_once('../BuscadorEmpleado.php');
+	
+	require_once('../BuscadorEmpleado.php');
 	$objetoBuscadorEmpleado = new BuscadorEmpleado();
 	$listaDeEmpleado = array();
 	$listaDeEmpleado = $objetoBuscadorEmpleado->listaDeEmpleado();
@@ -55,3 +54,4 @@
 	</center>
 </body>
 </html>
+git
