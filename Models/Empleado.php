@@ -86,7 +86,7 @@ class Empleado
     {
         $this->usuario = $usuario;
     }
-    public function setcontraseña($contraseña)
+    public function setcontrasenia($contraseña)
     {
         $this->contraseña = $contraseña;
     }
