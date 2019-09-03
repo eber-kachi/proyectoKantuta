@@ -11,7 +11,7 @@ CREATE TABLE Empresa
 )ENGINE=INNODB;
 
 CREATE TABLE TURNO(
-idTurno int not null  auto_increment PRIMARY KEY,
+idTurno int UNSIGNED not null  auto_increment PRIMARY KEY,
 nombre varchar(20) not null  
 );
 CREATE TABLE Cargo
@@ -32,10 +32,7 @@ CREATE TABLE Horario
   idCargo int UNSIGNED,
   idTurno int UNSIGNED,
   horarioIngreso TIME NOT NULL ,
-  HorarioSalida TIME NOT NULL ,
-  estadoTurno boolean NOT NULL,
-  ingresoTurno2 TIME ,
-  salidaTurno2 TIME ,
+  horarioSalida TIME NOT NULL ,
   FOREIGN KEY(idCargo) REFERENCES Cargo(idCargo) ON UPDATE CASCADE ON DELETE CASCADE,
   FOREIGN KEY(idTurno) REFERENCES Turno(idTurno) ON UPDATE CASCADE ON DELETE CASCADE
 )ENGINE=INNODB;

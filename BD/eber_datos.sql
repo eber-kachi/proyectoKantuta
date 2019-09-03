@@ -51,7 +51,7 @@ values(null,1, 2, '34653-CB', 'Manuel', 'Carlos', 'Medrano', 'Flores', '1972-03-
       (null,8, 3 , '314561-CB', 'Rosendo', 'Pedro', 'Miranda', null, '2000-10-05', 'a5b5ausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
       (null,8, 3 , '342561-CB', 'Rompe', 'Rene', 'MiraFlor', 'Tapia', '1992-10-05', 'abau24sdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
       (null,8, 3 , '324561-CB', 'Marco', null, 'Goni', 'Tarqui', '1992-10-05', '2ab4ausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
-      (null,8, 3 , '234561-CB', 'Marcelo', 'Pedro', 'Carros', 'Moreno', '1982-10-05', '44abausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1);
+      (null,8, 3 , '234561-CB', 'Marcelo', 'Pedro', 'Carros', 'Moreno', '1982-10-05', '44abausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
     
 
       (null,8, 3 , '7345612-CB', 'Rojelio', null, 'Gomez', null, '1992-10-05', 'abausdva213', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
@@ -135,28 +135,64 @@ values('Fijo'),
 --   ('Supervisor', 0),   4
   -- ('Contador', 0),     5
   -- ('Seguridad', 0),    6
-  -- ('Almacenero', 0),   7ii
+  -- ('Almacenero', 0),   7
   -- ('Chofer', 0),       8
-  -- ('Prensista',0);     9ii
+  -- ('Prensista',0);     9
   --('Distibuidor');      10
 
-insert INTO horario(idHoraio,idCargo,idTurno, horarioIngreso,horarioSalida)
-values(null,2,2,'08:00:00','12:00:00'),
-      (null,3,2,'06:00:00','14:00:00'),
-      (null,3,3,'14:00:00','22:00:00'),
-      (null,4,2,'06:00:00','14:00:00'),
-      (null,4,3,'14:00:00','22:00:00'),
-      (null,5,2,'08:00:00','12:00:00'),
-      (null,6,1,'08:00:00','20:00:00'),
-      (null,7,2,'06:00:00','14:00:00'),
-      (null,8,1,'08:00:00','12:00:00'),
-      (null,9,2,'06:00:00','14:00:00'),
-      (null,9,3,'06:00:00','14:00:00'),
-      (null,10,1,'08:00:00','12:00:00');
+insert INTO horario(idHorario,idCargo,idTurno, horarioIngreso,horarioSalida)
+values(null,1,2,'08:00:00','12:00:00'),-- Secretaria
+      (null,1,2,'14:00:00','18:00:00'),-- Secretaria
+      (null,3,1,'06:00:00','14:00:00'),-- Obrero corrido
+      (null,3,1,'14:00:00','22:00:00'),-- obrero corrido
+      (null,4,1,'06:00:00','14:00:00'),-- supervisor corrido
+      (null,4,1,'14:00:00','22:00:00'),-- supervisor corrido
+      (null,5,2,'08:00:00','12:00:00'),-- Contador
+      (null,6,1,'08:00:00','20:00:00'),-- Seguridad
+      (null,7,2,'06:00:00','14:00:00'),-- Almacenero corrido
+      (null,7,2,'14:00:00','22:00:00'),-- Almacenero corrido
+      (null,8,1,'08:00:00','12:00:00'),-- Chofer
+      (null,9,1,'06:00:00','14:00:00'),-- Prensista corrido
+      (null,9,1,'06:00:00','14:00:00'),-- Prensista corrido
+      (null,10,1,'08:00:00','12:00:00'),-- Distibuidor
+      (null,10,1,'14:00:00','18:00:00');-- Distibuidor
 
 
+-- llenando asistencia de empleado id 3 (roca carlos)
+
+insert into asistencia (idEmpleado, horaFechaEntrada, horaFechaSalida, TotalHoras)
+values (3, '2019-08-26 06:00:06', '2019-08-26 14:00:15', 8.0),
+        (3, '2019-08-27 06:01:06', '2019-08-27 14:00:15', 7.99),
+        (3, '2019-08-28 06:00:06', '2019-08-28 14:00:15', 8.0),
+        (3, '2019-08-29 06:05:06', '2019-08-29 14:00:15', 7.95),
+        (3, '2019-08-30 06:20:06', '2019-08-30 14:30:15', 8.0);
+
+-- llenando asistencia de empleado id 3 (roca carlos)
+
+insert into asistencia (idEmpleado, horaFechaEntrada, horaFechaSalida, TotalHoras)
+values (4, '2019-08-26 06:00:06', '2019-08-26 14:00:15', 8.0),
+        (4, '2019-08-27 06:01:06', '2019-08-27 14:00:15', 7.99),
+        (4, '2019-08-28 06:00:06', '2019-08-28 14:00:15', 8.0),
+        (4, '2019-08-29 06:05:06', '2019-08-29 14:00:15', 7.95),
+        (4, '2019-08-30 06:20:06', '2019-08-30 14:30:15', 8.10);
 
 
+-- viendo los datos de
+SELECT CONCAT_WS(' ',e.apellidoPaterno,e.apellidoMaterno,e.primerNombre,e.segundoNombre) as Empleado,
+       (ELT(WEEKDAY(DATE(a.horaFechaEntrada)) + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo')) AS DIA,
+       a.TotalHoras as HorasTrabajadas, c.nombre AS Cargo,
+	   IF(c.esFlexible,'Horario Flexible','Horario Fijo') AS TipoHorario,
+	   h.horarioIngreso, h.horarioSalida
+	   -- t.nombre AS Turno
+FROM empleado e INNER JOIN asistencia a
+ON e.idEmpleado = a.idEmpleado AND e.idEmpleado = 3
+AND DATE(a.horaFechaEntrada) = '2019-08-26'
+INNER JOIN cargo c
+ON e.idCargo = c.idCargo
+INNER JOIN horario h
+ON c.idCargo = h.idCargo
+INNER Join turno t
+ON h.idTurno = t.idTurno AND t.idTurno = 1;
 
 
 
