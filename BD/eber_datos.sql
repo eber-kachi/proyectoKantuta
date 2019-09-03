@@ -51,7 +51,7 @@ values(null,1, 2, '34653-CB', 'Manuel', 'Carlos', 'Medrano', 'Flores', '1972-03-
       (null,8, 3 , '314561-CB', 'Rosendo', 'Pedro', 'Miranda', null, '2000-10-05', 'a5b5ausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
       (null,8, 3 , '342561-CB', 'Rompe', 'Rene', 'MiraFlor', 'Tapia', '1992-10-05', 'abau24sdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
       (null,8, 3 , '324561-CB', 'Marco', null, 'Goni', 'Tarqui', '1992-10-05', '2ab4ausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
-      (null,8, 3 , '234561-CB', 'Marcelo', 'Pedro', 'Carros', 'Moreno', '1982-10-05', '44abausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1);
+      (null,8, 3 , '234561-CB', 'Marcelo', 'Pedro', 'Carros', 'Moreno', '1982-10-05', '44abausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
     
 
       (null,8, 3 , '7345612-CB', 'Rojelio', null, 'Gomez', null, '1992-10-05', 'abausdva213', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
@@ -140,21 +140,22 @@ values('Fijo'),
   -- ('Prensista',0);     9
   --('Distibuidor');      10
 
-insert INTO horario(idHoraio,idCargo,idTurno, horarioIngreso,horarioSalida)
+insert INTO horario(idHorario,idCargo,idTurno, horarioIngreso,horarioSalida)
 values(null,1,2,'08:00:00','12:00:00'),-- Secretaria
       (null,1,2,'14:00:00','18:00:00'),-- Secretaria
-      (null,3,2,'06:00:00','14:00:00'),-- Obrero
-      (null,3,3,'14:00:00','22:00:00'),-- obrero
-      (null,4,2,'06:00:00','14:00:00'),-- supervisor
-      (null,4,3,'14:00:00','22:00:00'),-- supervisor 
+      (null,3,1,'06:00:00','14:00:00'),-- Obrero corrido
+      (null,3,1,'14:00:00','22:00:00'),-- obrero corrido
+      (null,4,1,'06:00:00','14:00:00'),-- supervisor corrido
+      (null,4,1,'14:00:00','22:00:00'),-- supervisor corrido
       (null,5,2,'08:00:00','12:00:00'),-- Contador
       (null,6,1,'08:00:00','20:00:00'),-- Seguridad
-      (null,7,2,'06:00:00','14:00:00'),-- Almacenero
+      (null,7,2,'06:00:00','14:00:00'),-- Almacenero corrido
+      (null,7,2,'14:00:00','22:00:00'),-- Almacenero corrido
       (null,8,1,'08:00:00','12:00:00'),-- Chofer
-      (null,9,2,'06:00:00','14:00:00'),-- Prensista
-      (null,9,3,'06:00:00','14:00:00'),-- Prensista
-      (null,10,1,'08:00:00','12:00:00');-- Distibuidor
-
+      (null,9,1,'06:00:00','14:00:00'),-- Prensista corrido
+      (null,9,1,'06:00:00','14:00:00'),-- Prensista corrido
+      (null,10,1,'08:00:00','12:00:00'),-- Distibuidor
+      (null,10,1,'14:00:00','18:00:00');-- Distibuidor
 
 
 
