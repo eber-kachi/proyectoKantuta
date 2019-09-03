@@ -1,4 +1,4 @@
---Empleado 1(Asistencia Contador)
+--Empleado 1(Asistencia Distribuidor)
 INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-01 08:05:01','2019-08-01 12:05:00',4);
 INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-01 14:10:02','2019-08-01 18:05:00',3.55);
 INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-02 08:10:04','2019-08-02 12:10:02',4.05);
@@ -9,6 +9,62 @@ INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalid
 INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-04 14:10:01','2019-08-02 18:10:02',4);
 INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-05 08:05:01','2019-08-01 12:05:00',4);
 INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-05 14:10:02','2019-08-01 18:05:00',3.55);
+
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-07 08:05:01','2019-08-01 12:05:00',4);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-07 14:10:02','2019-08-01 18:05:00',3.55);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-08 08:10:04','2019-08-02 12:10:02',4.05);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-08 14:10:03','2019-08-02 18:00:03',3.50);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-09 08:05:01','2019-08-01 12:00:04',3.55);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-09 14:03:01','2019-08-01 18:05:03',3.57);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-10 08:00:02','2019-08-02 12:05:03',4.05);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-10 14:10:01','2019-08-02 18:10:02',4);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-11 08:05:01','2019-08-01 12:05:00',4);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-11 14:10:02','2019-08-01 18:05:00',3.55);
+
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-12 08:05:01','2019-08-01 12:05:00',4);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-12 14:10:02','2019-08-01 18:05:00',3.55);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-13 08:10:04','2019-08-02 12:10:02',4.05);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-14 14:10:03','2019-08-02 18:00:03',3.50);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-15 08:05:01','2019-08-01 12:00:04',3.55);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-15 14:03:01','2019-08-01 18:05:03',3.57);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-16 08:00:02','2019-08-02 12:05:03',4.05);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-16 14:10:01','2019-08-02 18:10:02',4);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-17 08:05:01','2019-08-01 12:05:00',4);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-17 14:10:02','2019-08-01 18:05:00',3.55);
+
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-18 08:05:01','2019-08-01 12:05:00',4);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-18 14:10:02','2019-08-01 18:05:00',3.55);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-19 08:10:04','2019-08-02 12:10:02',4.05);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-19 14:10:03','2019-08-02 18:00:03',3.50);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-20 08:05:01','2019-08-01 12:00:04',3.55);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-20 14:03:01','2019-08-01 18:05:03',3.57);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-21 08:00:02','2019-08-02 12:05:03',4.05);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-21 14:10:01','2019-08-02 18:10:02',4);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-22 08:05:01','2019-08-01 12:05:00',4);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-22 14:10:02','2019-08-01 18:05:00',3.55);
+
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-23 08:05:01','2019-08-01 12:05:00',4);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-23 14:10:02','2019-08-01 18:05:00',3.55);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-24 08:10:04','2019-08-02 12:10:02',4.05);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-24 14:10:03','2019-08-02 18:00:03',3.50);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-25 08:05:01','2019-08-01 12:00:04',3.55);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-25 14:03:01','2019-08-01 18:05:03',3.57);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-26 08:00:02','2019-08-02 12:05:03',4.05);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-26 14:10:01','2019-08-02 18:10:02',4);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-27 08:05:01','2019-08-01 12:05:00',4);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-27 14:10:02','2019-08-01 18:05:00',3.55);
+
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-28 08:05:01','2019-08-01 12:05:00',4);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-28 14:10:02','2019-08-01 18:05:00',3.55);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-29 08:10:04','2019-08-02 12:10:02',4.05);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-29 14:10:03','2019-08-02 18:00:03',3.50);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-30 08:05:01','2019-08-01 12:00:04',3.55);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-30 14:03:01','2019-08-01 18:05:03',3.57);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-31 08:00:02','2019-08-02 12:05:03',4.05);
+INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,1,'2019-08-31 14:10:01','2019-08-02 18:10:02',4);
+
+
+
 --Empleado 2(Asistencia Auditor)
 INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,2,'2019-08-07 08:10:04','2019-08-02 12:10:02',4.05);
 INSERT INTO Asistencia (idAsistencia,idEmpleado,horaFechaEntrada, horaFechaSalida,totalHoras) VALUES (null,2,'2019-08-07 14:10:03','2019-08-02 18:00:03',3.50);
