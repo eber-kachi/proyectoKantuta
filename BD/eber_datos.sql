@@ -12,7 +12,8 @@ VALUES
   ('Almacenero', 0),
   ('Chofer', 0),
   ('Prensista',0),
-  ('Distribuidor',0);
+  ('Distribuidor',0),
+  ('Marqueting ');
 
 -- agregando estado civil
 insert into estadocivil
@@ -51,7 +52,7 @@ values(null,1, 2, '34653-CB', 'Manuel', 'Carlos', 'Medrano', 'Flores', '1972-03-
       (null,8, 3 , '314561-CB', 'Rosendo', 'Pedro', 'Miranda', null, '2000-10-05', 'a5b5ausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
       (null,8, 3 , '342561-CB', 'Rompe', 'Rene', 'MiraFlor', 'Tapia', '1992-10-05', 'abau24sdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
       (null,8, 3 , '324561-CB', 'Marco', null, 'Goni', 'Tarqui', '1992-10-05', '2ab4ausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
-      (null,8, 3 , '234561-CB', 'Marcelo', 'Pedro', 'Carros', 'Moreno', '1982-10-05', '44abausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
+      (null,26,2 , '234561-CB', 'Marcelo', 'Pedro', 'Carros', 'Moreno', '1982-10-05', '44abausdva21', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
     
 
       (null,8, 3 , '7345612-CB', 'Rojelio', null, 'Gomez', null, '1992-10-05', 'abausdva213', 'M', 'Foto', '7523641', null, 'manuel', '1234', 1),
@@ -139,6 +140,7 @@ values('Fijo'),
   -- ('Chofer', 0),       8
   -- ('Prensista',0);     9
   --('Distibuidor');      10
+	--('Marqueting ');      11
 
 insert INTO horario(idHorario,idCargo,idTurno, horarioIngreso,horarioSalida)
 values(null,1,2,'08:00:00','12:00:00'),-- Secretaria
@@ -167,7 +169,35 @@ values (3, '2019-08-26 06:00:06', '2019-08-26 14:00:15', 8.0),
         (3, '2019-08-29 06:05:06', '2019-08-29 14:00:15', 7.95),
         (3, '2019-08-30 06:20:06', '2019-08-30 14:30:15', 8.0);
 
--- llenando asistencia de empleado id 3 (roca carlos)
+
+-- llenando asistencia de empleado id 3 (roca carlos) (de hace dos semanas)
+
+insert into asistencia (idEmpleado, horaFechaEntrada, horaFechaSalida, TotalHoras)
+values (3, '2019-08-19 06:00:06', '2019-08-19 14:00:15', 8.0),
+        (3, '2019-08-20 06:01:06', '2019-08-20 14:00:15', 7.99),
+        (3, '2019-08-21 06:00:06', '2019-08-21 14:00:15', 8.0),
+        (3, '2019-08-22 06:05:06', '2019-08-22 14:00:15', 7.95),
+        (3, '2019-08-23 06:20:06', '2019-08-23 14:30:15', 8.0);
+
+-- llenando asistencia de empleado id 3 (roca carlos) (de hace 3 semanas)
+
+insert into asistencia (idEmpleado, horaFechaEntrada, horaFechaSalida, TotalHoras)
+values (3, '2019-08-12 06:00:06', '2019-08-12 14:00:15', 8.0),
+        (3, '2019-08-13 06:01:06', '2019-08-13 14:00:15', 7.99),
+        (3, '2019-08-14 06:00:06', '2019-08-14 14:00:15', 8.0),
+        (3, '2019-08-15 06:05:06', '2019-08-15 14:00:15', 7.95),
+        (3, '2019-08-16 06:20:06', '2019-08-16 14:30:15', 8.0);
+
+-- llenando asistencia de empleado id 3 (roca carlos) (de hace 4 semanas)
+
+insert into asistencia (idEmpleado, horaFechaEntrada, horaFechaSalida, TotalHoras)
+values (3, '2019-08-05 06:00:06', '2019-08-05 14:00:15', 8.0),
+        (3, '2019-08-06 06:01:06', '2019-08-06 14:00:15', 7.99),
+        (3, '2019-08-07 06:00:06', '2019-08-07 14:00:15', 8.0),
+        (3, '2019-08-08 06:05:06', '2019-08-08 14:00:15', 7.95),
+        (3, '2019-08-09 06:20:06', '2019-08-09 14:30:15', 8.0);
+
+-- llenando asistencia de empleado id 4 (filomon )
 
 insert into asistencia (idEmpleado, horaFechaEntrada, horaFechaSalida, TotalHoras)
 values (4, '2019-08-26 06:00:06', '2019-08-26 14:00:15', 8.0),
@@ -175,6 +205,31 @@ values (4, '2019-08-26 06:00:06', '2019-08-26 14:00:15', 8.0),
         (4, '2019-08-28 06:00:06', '2019-08-28 14:00:15', 8.0),
         (4, '2019-08-29 06:05:06', '2019-08-29 14:00:15', 7.95),
         (4, '2019-08-30 06:20:06', '2019-08-30 14:30:15', 8.10);
+
+
+-- ###############################################################
+-- habiendo horas para marketing de horas fexibles de una semana 
+
+insert into asistencia (idEmpleado, horaFechaEntrada, horaFechaSalida, TotalHoras)
+values (26, '2019-08-26 07:00:06', '2019-08-26 10:00:15', 3),-- 26
+        (26, '2019-08-26 11:01:06', '2019-08-26 12:30:15', 1.30),
+        (26, '2019-08-26 14:00:06', '2019-08-26 15:30:15', 4.30), 
+			 (26,'2019-08-27 07:00:06', '2019-08-27 10:00:15', 3)-- 27
+			 (26,'2019-08-27 11:00:06', '2019-08-27 13:00:15', 2)
+			 (26,'2019-08-27 15:00:06', '2019-08-27 18:15:15', 3.15)
+       (26,'2019-08-28 07:00:06', '2019-08-28 10:00:15', 3)-- 28
+			 (26,'2019-08-28 11:00:06', '2019-08-28 13:00:15', 2)
+			 (26,'2019-08-28 15:00:06', '2019-08-28 18:15:15', 3.15)
+       (26, '2019-08-29 07:00:06', '2019-08-29 10:00:15', 3),-- 29
+        (26, '2019-08-29 11:01:06', '2019-08-29 12:30:15', 1.30),
+        (26, '2019-08-29 14:00:06', '2019-08-29 15:30:15', 4.30),
+        (26, '2019-08-30 07:03:06', '2019-08-30 11:30:15', 4.30),--30
+        (26, '2019-08-30 14:00:06', '2019-08-30 15:30:15', 3.30),
+
+
+
+
+
 
 
 -- viendo los datos de
