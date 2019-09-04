@@ -10,9 +10,8 @@ class BuscadorEstudiante
 
 		public function listaEmpleado()
 		{
-			$sqlListaDeEstudiantes = "
-			SELECT E.codigoUsuario,CONCAT_WS(' ',E.apellidoPaterno,E.apellidoMaterno,E.primerNombre,E.segundoNombre) nombreCompleto,
-			       E.CI,E.idCargo ,C.nombre, if(C.esFlexible=true,"Flexible","No Flexible") as 'FLEXIBILIDAD'
+			$sqlListaDeEstudiantes = "SELECT E.codigoUsuario,CONCAT_WS(' ',E.apellidoPaterno,E.apellidoMaterno,E.primerNombre,E.segundoNombre) nombreCompleto,
+			       E.CI,E.idCargo ,C.nombre, if(C.esFlexible=true,'Flexible','No Flexible') as 'FLEXIBILIDAD'
 			FROM Empleado E join Cargo C
 			WHERE E.idCargo = C.idCargo
 			ORDER BY E.apellidoPaterno,E.apellidoMaterno,E.primerNombre,E.segundoNombre,u.CI;
@@ -109,16 +108,17 @@ class BuscadorEstudiante
 		}
 }
  ?>
-=======
+<!-- ======= -->
 <?php
-	requireonce ('Conexion.php');
+	require_once ('Conexion.php');
+	require_once('Empleado.php');
 	class BuscadorEmpleado
 	{
 	 	private $conexion;
 	 	private $user;
 		function __construct()
 		{
-			$this->user = new Usuario();
+			//$this->user = new Usuario();
 			$this->conexion =  new Conexion();
 		}
 		public function listaDeEmpleado()
@@ -136,22 +136,23 @@ class BuscadorEstudiante
 			// arreglo para llenar la lista de Empleado
 			$listaEmpleado = array();
 			$i=0;
-			foreach ($listaEmpleadoDeLaConsola as RegistroEmpleado) {
+			foreach ($listaEmpleadoDeLaConsola as $RegistroEmpleado) {
 				$objEmpleado = new Empleado();
-				$objEmpleado->setidEmpleado(RegistroEmpleado['idEmpleado']);
-				$objEmpleado->setidCargo(RegistroEmpleado['idCargo']);
-				$objEmpleado->setidEstadoCivil(RegistroEmpleado['idEstadoCivil']);
-				$objEmpleado->setci(RegistroEmpleado['ci']);
-				$objEmpleado->setEmpleado(RegistroEmpleado['Empleado']);
-				$objEmpleado->setfechaNacimiento(RegistroEmpleado['fechaNacimiento']);
-				$objEmpleado->setcodeRFID(RegistroEmpleado['codeRFID']);
-                $objEmpleado->setgenero(RegistroEmpleado['genero']);
-                $objEmpleado->setfotografia(RegistroEmpleado['fotografia']);
-                $objEmpleado->setnumeroCelular(RegistroEmpleado['numeroCelular']);
-                $objEmpleado->setnumeroFijo(RegistroEmpleado['numeroFijo']);
-                $objEmpleado->setusuario(RegistroEmpleado['usuario']);
-                $objEmpleado->setcontrasenia(RegistroEmpleado['contrasenia']);
-                $objEmpleado->setactivo(RegistroEmpleado['activo']);
+				$objEmpleado->setidEmpleado($RegistroEmpleado['idEmpleado']);
+				$objEmpleado->setidCargo($RegistroEmpleado['idCargo']);
+				$objEmpleado->setidEstadoCivil($RegistroEmpleado['idEstadoCivil']);
+				$objEmpleado->setci($RegistroEmpleado['ci']);
+				$objEmpleado->setEmpleado($RegistroEmpleado['Empleado']);
+				$objEmpleado->setfechaNacimiento($RegistroEmpleado['fechaNacimiento']);
+				$objEmpleado->setcodeRFID($RegistroEmpleado['codeRFID']);
+                $objEmpleado->setgenero($RegistroEmpleado['genero']);
+                $objEmpleado->setfotografia($RegistroEmpleado['fotografia']);
+                $objEmpleado->setnumeroCelular($RegistroEmpleado['numeroCelular']);
+                $objEmpleado->setnumeroFijo($RegistroEmpleado['numeroFijo']);
+                $objEmpleado->setusuario($RegistroEmpleado['Usuario']);
+				$objEmpleado->setcontrasenia($RegistroEmpleado['contrasenia']);
+				// var_dump($RegistroEmpleado);
+                $objEmpleado->setactivo($RegistroEmpleado['activo']);
                 
 				$listaEmpleado[$i] = $objEmpleado;
 				$i++;

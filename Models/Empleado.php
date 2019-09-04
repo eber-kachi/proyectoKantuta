@@ -1,7 +1,5 @@
 <?php
 
-
-
 class Empleado
 {
     private $idEmpleado;
@@ -12,7 +10,7 @@ class Empleado
     private $segundoNombre;
     private $apellidoPaterno;
     private $apellidoMaterno;
-    private $fechaNacimiendo;
+    private $fechaNacimiento;
     private $codeRFID;
     private $genero;
     private $fotografia;
@@ -38,14 +36,14 @@ class Empleado
     public function setsegundoNombre($segundoNombre){$this->segundoNombre = $segundoNombre;}
     public function setapellidoPaterno($apellidoPaterno){$this->apellidoPaterno = $apellidoPaterno;}
     public function setapellidoMaterno($apellidoMaterno){$this->apellidoMaterno = $apellidoMaterno;}
-    public function setfechaNacimiento($fechaNacimiento){$this->fechaNacimiento = $fechaNacimiendo;}
+    public function setfechaNacimiento($fechaNacimiento){$this->fechaNacimiento = $fechaNacimiento;}
     public function setcodeRFID($codeRFID){ $this->codeRFID = $codeRFID;}
     public function setgenero($genero){$this->genero = $genero;}
     public function setfotografia($fotografia){$this->fotografia = $fotografia;}
     public function setnumeroCelular($numeroCelular){$this->numeroCelular = $numeroCelular;}
     public function setnumeroFijo($numeroFijo){$this->numeroFijo = $numeroFijo;}
     public function setusuario($usuario){$this->usuario = $usuario;}
-    public function setcontrasenia($contraseña){$this->contraseña = $contraseña;}
+    public function setcontrasenia($contraseña){$this->contrasenia = $contraseña;}
     public function setactivo($activo){$this->activo = $activo;}
 
     public function setnombreFlexible($nombreFlexible){$this->nombreFlexible = $nombreFlexible;}

@@ -11,7 +11,7 @@
 		{
 			try {
 				  parent::__construct($this->tipoDB.':host='.$this->servidor.';dbname='.$this->db, $this->user, $this->password);
-				  echo "Conexion exitosa"." JACC";
+				//   echo "Conexion exitosa"." JACC";
 			} 
 			catch (PDOException $e ) {
 				echo 'ERROR: No se logro hacer una conexion a la Base de Datos - '.$e->getMessage();

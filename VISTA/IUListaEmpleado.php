@@ -1,6 +1,6 @@
 <?php 
 	
-	require_once('../BuscadorEmpleado.php');
+	require_once('./Models/BuscadorEmpleado.php');
 	$objetoBuscadorEmpleado = new BuscadorEmpleado();
 	$listaDeEmpleado = array();
 	$listaDeEmpleado = $objetoBuscadorEmpleado->listaDeEmpleado();
@@ -18,7 +18,7 @@
 <body>
 	
 	<?php 
-	require_once('headerAdmin.php');
+	//require_once('headerAdmin.php');
 	 ?>
 	<center class="centro">
 		<h1>Lista de Empleado</h1>
@@ -43,7 +43,7 @@
 				<td><?php echo $objetoEmpleado->getgenero();?></td>
 				<td><?php echo $objetoEmpleado->getnumeroCelular();?></td>
 				<td><?php echo $objetoEmpleado->getnumeroFijo();?></td>
-				<td><?php echo $objetoEmpleado->getCntrasenia();?></td>
+				<td><?php echo $objetoEmpleado->getContrasenia();?></td>
 				<td><?php echo $objetoEmpleado->getactivo();?></td>
 				</tr>
 				<?php 
@@ -54,4 +54,3 @@
 	</center>
 </body>
 </html>
-git
