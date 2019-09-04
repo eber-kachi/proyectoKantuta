@@ -398,3 +398,36 @@ INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,123,'2
 INSERT INTO Gestion (idGestion,idEmpresa,idEmpleado,Fecha) VALUES (null,1,124,'2019-11-01 14:30:00');
 
 
+SELECT e.idEmpleado,
+       (ELT(WEEKDAY(DATE(a.horaFechaEntrada)) + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo')) AS DIA,
+       a.TotalHoras as HorasTrabajadas, c.nombre AS Cargo,
+	   IF(c.esFlexible,'Horario Flexible','Horario Fijo') AS TipoHorario,
+	   h.horarioIngreso, h.horarioSalida
+FROM empleado e INNER JOIN asistencia a
+ON e.idEmpleado = a.idEmpleado AND e.idEmpleado = 3
+INNER JOIN cargo c
+ON e.idCargo = c.idCargo
+INNER JOIN horario h
+ON c.idCargo = h.idCargo
+INNER Join turno t
+ON h.idTurno = t.idTurno AND t.idTurno = 1
+AND DATE(a.horaFechaEntrada) = '2019-08-30'
+;
+
+
+insert INTO horario(idHorario,idCargo,idTurno, horarioIngreso,horarioSalida)
+values(null,1,2,'08:00:00','12:00:00'),
+      (null,1,2,'14:00:00','18:00:00'),
+      (null,3,1,'06:00:00','14:00:00'),
+      (null,3,1,'14:00:00','22:00:00'),
+      (null,4,1,'06:00:00','14:00:00'),
+      (null,4,1,'14:00:00','22:00:00'),
+      (null,5,2,'08:00:00','12:00:00'),
+      (null,6,1,'08:00:00','20:00:00'),
+      (null,7,2,'06:00:00','14:00:00'),
+      (null,7,2,'14:00:00','22:00:00'),
+      (null,8,1,'08:00:00','12:00:00'),
+      (null,9,1,'06:00:00','14:00:00'),
+      (null,9,1,'06:00:00','14:00:00'),
+      (null,10,1,'08:00:00','12:00:00'),
+      (null,10,1,'14:00:00','18:00:00');
