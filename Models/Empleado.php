@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 class Empleado
 {
@@ -19,10 +20,32 @@ class Empleado
     private $usuario;
     private $contrasenia;
     private $activo;
+=======
+class Empleado
+{
+    public $idEmpleado;
+    public $idCargo;
+    public $idEstadoCivil;
+    public $CI;
+    public $primerNombre;
+    public $segundoNombre;
+    public $apellidoPaterno;
+    public $apellidoMaterno;
+    public $fechaNacimiendo;
+    public $codeRFID;
+    public $genero;
+    public $fotografia;
+    public $numeroCelular;
+    public $numeroFijo;
+    public $usuario;
+    public $contrasenia;
+    public $activo;
+>>>>>>> 8909503424d0100d71e759c99cd0cd7a2e8f48f2
 
-    private $nombreFlexible;
+    public $nombreFlexible;
     public $nombre;
     public $nombreCompleto;
+    
     function __construct()
     { }
 
@@ -47,8 +70,8 @@ class Empleado
     public function setactivo($activo){$this->activo = $activo;}
 
     public function setnombreFlexible($nombreFlexible){$this->nombreFlexible = $nombreFlexible;}
-    public function setNombreCompleto($nombreCompleto){$this->nombreCompleto = $nombreCompleto;}
-    public function setNombre($nombre){$this->nombre = $nombre;}
+    public function setnombreCompleto($nombreCompleto){$this->nombreCompleto = $nombreCompleto;}
+    public function setnombre($nombre){$this->nombre = $nombre;}
 
     //get
     public function getidEmpleado(){return $this->idEmpleado;}
@@ -71,7 +94,7 @@ class Empleado
     public function getactivo(){return $this->activo;}
 
     public function getnombreFlexible(){return $this->nombreFlexible;}
-    public function getNombreCompleto(){return $this->nombreCompleto;}
-    public function getNombre(){return $this->nombre;}
+    public function getnombreCompleto(){return $this->nombreCompleto;}
+    public function getnombre(){return $this->nombre;}
 
 }

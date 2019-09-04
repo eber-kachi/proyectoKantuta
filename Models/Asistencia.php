@@ -1,23 +1,28 @@
-
-
-
 <?php
 
 class Asistencia
 {
-    private $idAsistencia;
-    private $idEmpleado ;
-    private $estado;
-    private $horaFechaEntrada;
-    private $horaFechaSalida;
-    private $TotalHoras;
+    public $idAsistencia;
+    public $idEmpleado ;
+    public $estado;
+    public $horaFechaEntrada;
+    public $horaFechaSalida;
+    public $TotalHoras;
+
+    public $dia;
+    public $cargo;
+    public $tipoHorario;
+    public $totalSemanal;
+    public $totalMensual;
+    public $totalFecha;
+
 
     function __construct()
     { }
     //set
     public function setidAsistencia($idAsistencia)
     {
-        $this->idAsistencia = $idCidAsistenciaargo;
+        $this->idAsistencia = $idAsistencia;
     }
     public function setidEmpleado($idEmpleado)
     {
@@ -39,6 +44,13 @@ class Asistencia
     {
         $this->TotalHoras = $TotalHoras;
     }
+    public function setdia($dia){$this->dia = $dia;}
+    public function setcargo($cargo){$this->cargo = $cargo;}
+    public function settipohorario($tipoHorario){$this->tipoHorario = $tipoHorario;}
+    public function settotalSemanal($totalSemanal){$this->totalSemanal = $totalSemanal;}
+    public function settotalMensual($totalMensual){$this->totalMensual = $totalMensual;}
+    public function settotalFecha($totalFecha){$this->totalFecha = $totalFecha;}
+
 
     //get
     public function getidAsistencia()
@@ -65,4 +77,11 @@ class Asistencia
     {
         return $this->TotalHoras;
     }
+    public function getdia(){return $this->dia;}
+    public function getcargo(){return $this->cargo;}
+    public function gettipoHorario(){return $this->tipoHorario;}
+    public function gettotalSemanal(){return $this->totalSemanal;}
+    public function gettotalMensual(){return $this->totalMensual;}
+    public function gettotalFecha(){return $this->totalFecha;}
+
 }

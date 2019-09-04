@@ -19,6 +19,6 @@
 			}
 		}
 	}
-		$con = new Conexion();
+		// $con = new Conexion();
 	//camtasia editor de videos
  ?>

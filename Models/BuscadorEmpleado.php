@@ -1,112 +1,82 @@
 <?php 
-class BuscadorEstudiante
+class BuscadorEmpleado
 	{
+
 		private $conexion;
 
 		function __construct()
 		{
 			$this->conexion =  new Conexion();
-		}
+        }
 
 		public function listaEmpleado()
 		{
+<<<<<<< HEAD
 			$sqlListaDeEstudiantes = "SELECT E.codigoUsuario,CONCAT_WS(' ',E.apellidoPaterno,E.apellidoMaterno,E.primerNombre,E.segundoNombre) nombreCompleto,
 			       E.CI,E.idCargo ,C.nombre, if(C.esFlexible=true,'Flexible','No Flexible') as 'FLEXIBILIDAD'
+=======
+			$sqlListaDeEmpleado = "
+			SELECT E.idEmpleado as 'idEmpleado', CONCAT_WS(' ',E.apellidoPaterno,E.apellidoMaterno,E.primerNombre,E.segundoNombre) as 'nombreCompleto',
+                         C.idCargo, C.nombre as 'nombre', 
+                   if(C.esFlexible = true,'Flexible','No Flexible') as 'Flexibilidad'
+>>>>>>> 8909503424d0100d71e759c99cd0cd7a2e8f48f2
 			FROM Empleado E join Cargo C
 			WHERE E.idCargo = C.idCargo
-			ORDER BY E.apellidoPaterno,E.apellidoMaterno,E.primerNombre,E.segundoNombre,u.CI;
-			ORDER BY A.codigoAsistencia desc;
+			ORDER BY C.esFlexible, E.apellidoPaterno, E.apellidoMaterno, E.primerNombre, E.segundoNombre;
 								";
-			$cmd = $this->conexion->prepare($sqlListaDeEstudiantes);
-			$cmd->execute();
-			$listaDeEstudiantesDeLaConsulta = $cmd->fetchAll();
+			$cmd = $this->conexion->prepare($sqlListaDeEmpleado);
+            $cmd->execute();
+			$listaDeEmpleadoDeLaConsulta = $cmd->fetchAll();
 
-            //llenando la lista para usaurios...con el foreach
-			$listaEstudianteAsistencia = 	array();
+			$listaEmpleado = array();
 			$i = 0;
-          	
-            foreach($listaDeEstudiantesDeLaConsulta as $regitroEstudiante){
-	            	$objetoEstudiante = new Estudiante();	
-	            	$objetoEstudiante->setCodigoEstudiante($regitroEstudiante['codigoEstudiante']);	
-	            	$objetoEstudiante->setNombreCompleto($regitroEstudiante['nombreCompleto']);
-		            $objetoEstudiante->setFotografia($regitroEstudiante['fotografia']);	
-		            $objetoEstudiante->setNombreNivel($regitroEstudiante['nombreNivel']);
-		            $objetoEstudiante->setHora($regitroEstudiante['hora']);
-		            $objetoEstudiante->setHoraIngreso($regitroEstudiante['horaIngreso']);	
-		            $objetoEstudiante->setAtraso($regitroEstudiante['atraso']);
-					  $listaEstudianteAsistencia[$i] = $objetoEstudiante;
+
+            foreach($listaDeEmpleadoDeLaConsulta as $registroEmpleado){
+                    $objetoEmpleado = new Empleado();	
+	            	$objetoEmpleado->setidEmpleado($registroEmpleado['idEmpleado']);	
+	            	$objetoEmpleado->setnombreCompleto($registroEmpleado['nombreCompleto']);
+		            $objetoEmpleado->setnombre($registroEmpleado['nombre']);	
+		            $objetoEmpleado->setnombreFlexible($registroEmpleado['Flexibilidad']);
+					$listaEmpleado[$i] = $objetoEmpleado;
 					  $i++;
 		    }
 
-			return $listaEstudianteAsistencia;
-		}//end function for assistance
-		public function listaDeArticulosPorCriterioDinamico($cadenaBuscar,$nivel)
-		{   
-			$sqlListaDeEstudiantes = "
-							SELECT E.codigoEstudiante, CONCAT_WS(' ',E.apellidoPaterno,E.apellidoMaterno,E.primerNombre,E.segundoNombre) nombreCompleto, E.fotografia, A.fechaHoraAsistencia, N.nombre as nombreNivel, H.hora as hora, (TIME(A.fechaHoraAsistencia)) as horaIngreso, ((TIME(A.fechaHoraAsistencia))-(h.hora)) as atraso
-							FROM Estudiante E, InscripcionMensualidad IM, Asistencia A, HorarioAsignadoInstructor HAI, Horario H, Nivel N
-							WHERE DATE(A.fechaHoraAsistencia) = '2019-06-19'
-							AND A.codigoInscripcionMensualidad = IM.codigoInscripcionMensualidad
-							AND IM.codigoEstudiante = E.codigoEstudiante
-							AND IM.codigoGestion >= 9
-							AND IM.codigoHorarioAsignadoInstructor = HAI.codigoHorarioAsignadoInstructor
-							AND HAI.codigoHoraInicio = H.codigoHorario
-							AND HAI.codigoNivel = N.codigoNivel
-									";	
-			$condiciones = [];//arreglo donde se ira colocando los registros
-			if (!empty($nivel) && $nivel != 'todo') {
-				// $condiciones[] = " N.codigoNivel = :nivel ";
-				$condiciones[] = " N.codigoNivel = ".$nivel;
-			}
+			return $listaEmpleado;
+        }//end function for empleado
+        public function buscarEmpleado($idEmpleado)
+		{
+            $sqlListaImagenes = "
+            SELECT E.idEmpleado, CONCAT_WS(' ',E.apellidoPaterno,E.apellidoMaterno,E.primerNombre,E.segundoNombre) nombreCompleto,
+			       E.CI,E.idCargo ,C.nombre as 'nombre', if(C.esFlexible=true,'Flexible','No Flexible') as 'Flexibilidad'
+			FROM Empleado E join Cargo C
+            WHERE E.idEmpleado = :idEmpleado
+            AND E.idCargo = C.idCargo
+            ORDER BY C.esFlexible, E.apellidoPaterno,E.apellidoMaterno,E.primerNombre,E.segundoNombre;
 
-			if (!empty($cadenaBuscar)) {
-				$condiciones[] = "E.apellidoPaterno like '%". $cadenaBuscar."%' OR E.apellidoMaterno like '%". $cadenaBuscar."%' OR E.primerNombre like '%".$cadenaBuscar."%' OR E.segundoNombre like '%".$cadenaBuscar."%' OR E.CI like '%".$cadenaBuscar."%'";
-			}
-			/*COMO FUNCIONA EL IMPLODE
-				$array = array('lastname', 'email', 'phone');
-				$comma_separated = implode(":", $array);
-				lastname:email:phone
-			*/
-			if (!empty($condiciones)) {
-				$sqlListaDeEstudiantes .= "AND ".implode(" AND ",$condiciones);
-				
-			}
-			$sqlListaDeEstudiantes .= " ORDER BY E.apellidoPaterno";
-
-			print_r($sqlListaDeEstudiantes);
-			$cmd = $this->conexion->prepare($sqlListaDeEstudiantes);
-			// if (!empty($nombreArticulo)) {
-			// 	$cmd->bindParam(':nombreArticulo', $nombreArticulo);
-			// }
-			// if (!empty($nivel) && $nivel != 'todo') {
-			// 	// $nivel = $nivel == 'nivel';// la expresion retorna un booleano, es lo mismo que If ($estado == 'activo'), de qui retorna un true o false
-			// 	$cmd->bindParam(':nivel',$nivel);
-			// }
+								";
+			$cmd = $this->conexion->prepare($sqlListaImagenes);
+			$cmd->bindParam(':idEmpleado', $idEmpleado);
 			$cmd->execute();
-			/* Ejecuta una sentencia preparada pasando un array de valores */
-			$listaDeEstudiantesDeLaConsulta = $cmd->fetchAll();
-
-            // Arreglo para llenar una lista de Articulos
-			$listaEstudianteAsistencia = array();
+			$listaDeEmpleadoDeLaConsulta = $cmd->fetchAll();
+          
+            $buscarEmpleado = 	array();
 			$i = 0;
           	
-            foreach($listaDeEstudiantesDeLaConsulta as $regitroEstudiante){
-	            	$objetoEstudiante = new Estudiante();	
-	            	$objetoEstudiante->setCodigoEstudiante($regitroEstudiante['codigoEstudiante']);	
-	            	$objetoEstudiante->setNombreCompleto($regitroEstudiante['nombreCompleto']);
-		            $objetoEstudiante->setFotografia($regitroEstudiante['fotografia']);	
-		            $objetoEstudiante->setNombreNivel($regitroEstudiante['nombreNivel']);
-		            $objetoEstudiante->setHora($regitroEstudiante['hora']);
-		            $objetoEstudiante->setHoraIngreso($regitroEstudiante['horaIngreso']);	
-		            $objetoEstudiante->setAtraso($regitroEstudiante['atraso']);
-					$listaEstudianteAsistencia[$i] = $objetoEstudiante;
+            foreach($listaDeEmpleadoDeLaConsulta as $registroEmpleado){
+	            	$objetoEmpleado = new Empleado();	
+	            	$objetoEmpleado->setidEmpleado($registroEmpleado['idEmpleado']);	
+	            	$objetoEmpleado->setnombreCompleto($registroEmpleado['nombreCompleto']);
+		            $objetoEmpleado->setnombre($registroEmpleado['nombre']);	
+		            $objetoEmpleado->setnombreFlexible($registroEmpleado['Flexibilidad']);
+					$buscarEmpleado[$i] = $objetoEmpleado;
 					  $i++;
 		    }
-		    //print_r($listaDeArticulos);
-			return $listaEstudianteAsistencia;
 
-		}
+			return $buscarEmpleado;
+		}//end function
+		
 }
+<<<<<<< HEAD
  ?>
 <!-- ======= -->
 <?php
@@ -160,3 +130,6 @@ class BuscadorEstudiante
 			return $listaEmpleado;
 		}// fin funcion Lista de usuario
     }
+=======
+ ?>
+>>>>>>> 8909503424d0100d71e759c99cd0cd7a2e8f48f2

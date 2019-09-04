@@ -93,11 +93,10 @@ CREATE TABLE Vacacion
 
 CREATE TABLE Feriado
 (
-  idFeriado int auto_increment ,
-  fechaInicio  DATETIME ,
-  fechaFin  DATETIME ,
-  descripción text,
-  PRIMARY KEY(idFeriado)
+  idFeriado INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+  fechaInicio  DATE NOT NULL,
+  fechaFin  DATE NOT NULL ,
+  descripción text NOT NULL
 )ENGINE=INNODB;
 
 
